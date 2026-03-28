@@ -1,0 +1,12 @@
+.notificacao-box{
+    background-color: #F8FAFC;
+    border: 1px solid #dedee3;
+    border-radius: 10px;
+    padding: 15px;
+    width: max-content;
+    filter: drop-shadow(2px 4px 6px #e5e5e5);
+    position: fixed;
+    right: 50px;
+    top: 20px;
+    z-index: 100;
+}

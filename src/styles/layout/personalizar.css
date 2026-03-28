@@ -1,0 +1,42 @@
+/* ----- Inputs ----- */
+.personalizar-titulo{
+    color: #000;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.personalizar-itens{
+    display: flex;
+    gap: 20px;
+}
+
+.personalizar-item{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ===== Color Inputs ===== */
+.personalizar-cores-box{
+    display: flex;
+    gap: 5px;
+}
+
+.personalizar-cores-box input[type="color"] {
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 0;
+    width: 60px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.personalizar-cores-box input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.personalizar-cores-box input[type="color"]::-webkit-color-swatch {
+    border: 5px solid #e4e6ed;
+    border-radius: 10px;
+}

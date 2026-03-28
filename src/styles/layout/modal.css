@@ -1,0 +1,39 @@
+.preset-salvar{
+    background-color:#fff;
+    border: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 20px;
+    width: 450px;
+}
+
+.preset-salvar-titulo{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.preset-salvar::backdrop{
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.preset-salvar-texto{
+    margin-bottom: 30px;
+}
+
+.preset-input-vazio{
+    margin: 10px 0 40px;
+}
+
+.preset-salvar-btns{
+    justify-content: right;
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.preset-btn-cancelar{
+    border: none;
+    background-color: transparent;
+}

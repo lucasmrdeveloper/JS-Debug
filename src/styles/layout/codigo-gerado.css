@@ -1,0 +1,51 @@
+.codigo-box{
+    background-color: #0A0B10;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.codigo-copiar{
+    position: sticky;
+    left: 85%;
+    margin-right: 10px;
+    margin-left: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+.codigo-copiar-img{
+    width: 25px;
+    fill: #fff;
+}
+
+.codigo-copiar-texto{
+    color: #fff;
+}
+
+.codigo-gerado{
+    color: #fff;
+    line-height: 25px;
+    position: relative;
+    top: -12px;
+}
+
+.codigo-gerado-console{
+    color: #ffebbf;
+}
+
+.codigo-gerado-css{
+    white-space: pre;
+}
+
+.codigo-gerado-mensagem,
+.codigo-gerado-estilos{
+    margin-left: 20px;
+    margin-right: 20px;
+}

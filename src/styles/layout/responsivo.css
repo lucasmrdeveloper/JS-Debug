@@ -1,0 +1,38 @@
+@media(max-width: 1024px){
+    .colunas{
+        flex-direction: column;
+    }
+
+    .coluna-esquerda{
+        width: 100%;
+    }
+
+    .coluna-direita{
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px) {
+    .header-box{
+        background-color: transparent;
+        gap: 20px;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }   
+
+    .presets-itens {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 480px) {
+    body{
+        padding: 30px;
+    }
+}

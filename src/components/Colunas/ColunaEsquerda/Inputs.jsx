@@ -1,0 +1,118 @@
+// Contexto
+import { useContext } from "react"
+import { EstadoContext } from "../../../context/EstadoContext"
+
+// Componentes
+import SectionBox from "./SectionBox"
+import ItemInput from "../ColunaEsquerda/ItemInput"
+import ItemColor from "./ItemColor"
+
+// CSS
+import "../../../styles/layout/personalizar.css"
+
+
+function Inputs() {
+    const { estado, setEstado } = useContext(EstadoContext)
+    
+    return(
+        <>
+            <div className="coluna-esquerda">
+
+                <h2 className="personalizar-titulo">Personalizar Estilo</h2>
+
+                <SectionBox titulo="Textos">
+                    <ItemInput
+                        label="Título"
+                        id="titulo"
+                        value={estado.titulo}
+                        data="titulo"
+                        estado={estado}
+                        setEstado={setEstado}
+                    />
+
+                    <ItemInput
+                        label="Mensagem"
+                        id="mensagem"
+                        value={estado.descricao}
+                        data="mensagem"
+                        estado={estado}
+                        setEstado={setEstado}
+                    />
+                </SectionBox>
+
+                <SectionBox titulo="Cores">
+                    <ItemColor
+                        label="Cor do Texto"
+                        id="cor-texto"
+                        value={estado.corTexto}
+                        data="cor-texto"
+                        estado={estado}
+                        setEstado={setEstado}
+                    />
+
+                    <ItemColor
+                        label="Cor do Fundo"
+                        id="cor-fundo"
+                        value={estado.corFundo}
+                        data="cor-fundo"
+                        estado={estado}
+                        setEstado={setEstado}
+                    />
+                </SectionBox>
+
+                <SectionBox titulo="Tipografia">
+                    <ItemInput
+                        label="Tamanho da fonte"
+                        id="tamanho-fonte"
+                        value={estado.tamanhoFonte}
+                        data="tamanho-fonte"
+                        estado={estado}
+                        setEstado={setEstado}
+                    />
+
+                    <ItemInput
+                        label="Peso da fonte"
+                        id="peso-fonte"
+                        value={estado.pesoFonte}
+                        data="peso-fonte"
+                        estado={estado}
+                        setEstado={setEstado}
+                    />
+                </SectionBox>
+
+                <SectionBox titulo="Espaçamentos">
+                    <ItemInput
+                        label="Padding"
+                        id="espacamento"
+                        value={estado.espacamento}
+                        data="espacamento"
+                        estado={estado}
+                        setEstado={setEstado}
+                    />
+                </SectionBox>
+
+                <SectionBox titulo="Bordas">
+                    <ItemInput
+                        label="Border Radius"
+                        id="raio-borda"
+                        value={estado.raioBorda}
+                        data="raio-borda"
+                        estado={estado}
+                        setEstado={setEstado}
+                    />
+
+                    <ItemInput
+                        label="Borda"
+                        id="borda"
+                        value={estado.borda}
+                        data="borda"
+                        estado={estado}
+                        setEstado={setEstado}
+                    />
+                </SectionBox>
+            </div>
+        </>
+    )
+}
+
+export default Inputs

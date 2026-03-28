@@ -1,0 +1,49 @@
+.meus-presets-container{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.presets-salvos-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.preset-salvo-box{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #e7e4e4;
+}
+
+.preset-salvo-nome{
+    margin-bottom: 10px;
+}
+
+.preset-conteudo-box{
+    background-color: #F8FAFC; 
+    border: 1px solid #dedee3;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.preset-salvo-btns{
+    justify-content: right;
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.preset-salvo-copiar{
+    background: #DDECEB;
+    color: #3b9579;
+}
+
+.preset-salvo-excluir{
+    background: #ffb4b4;
+    color: #5d3c3c;
+}
