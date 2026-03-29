@@ -3,7 +3,6 @@ import handlePreset from "../../hooks/handlePreset"
 
 
 function Preset( { preset, descricao, data} ) {
-    
     const { clicado } = handlePreset()
 
     const cores = {

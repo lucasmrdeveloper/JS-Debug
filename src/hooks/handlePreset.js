@@ -13,10 +13,7 @@ function handlePreset() {
     }   
 
     function validaPreset(preset) {
-
         if (preset === "sucesso") {
-            console.log("preset SUCESSO")
-
             setEstado((estado) => ({
                 ...estado,
                 
@@ -28,8 +25,6 @@ function handlePreset() {
         }
 
         if (preset === "erro") {
-            console.log("preset ERRO")
-
             setEstado((estado) => ({
                 ...estado,
 
@@ -41,8 +36,6 @@ function handlePreset() {
         }
 
         if (preset === "aviso") {
-            console.log("preset AVISO")
-
             setEstado((estado) => ({
                 ...estado,
 
@@ -53,7 +46,6 @@ function handlePreset() {
             }))
         }
     }
-
 
     return{
         clicado
