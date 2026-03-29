@@ -1,5 +1,7 @@
-// Contexto
+// Hook
 import { useContext } from "react"
+
+// Contexto
 import { EstadoContext } from "../../../context/EstadoContext"
 
 // Componentes
