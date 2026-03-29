@@ -9,10 +9,10 @@ function handlePreset() {
     function clicado(e) {
         const preset = e.currentTarget.dataset.preset
 
-        validaPreset(preset)
+        validarPreset(preset)
     }   
 
-    function validaPreset(preset) {
+    function validarPreset(preset) {
         if (preset === "sucesso") {
             setEstado((estado) => ({
                 ...estado,
