@@ -1,5 +1,5 @@
 // Lógica
-import usePreview from "../../../hooks/usePreview";
+import usePreview from "../../../hooks/formatarDadosPreview";
 
 
 function PreviewConteudo( contexto ) {

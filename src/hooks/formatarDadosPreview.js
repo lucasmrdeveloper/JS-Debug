@@ -1,4 +1,4 @@
-function usePreview(source) {
+function formatarDadosPreview(source) {
     if (!source) return null
 
     if(source) {
@@ -24,4 +24,4 @@ function usePreview(source) {
     
 }
 
-export default usePreview
+export default formatarDadosPreview
