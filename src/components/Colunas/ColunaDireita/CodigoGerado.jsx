@@ -17,8 +17,9 @@ function CodigoGerado() {
     console.log('%c ===== Codigo ===== ', 'color: #00ff88; background: #1a1a2e; font-size: 14px; font-weight: bold; padding: 8px 16px; border-radius: 4px');
 
     const { estado } = useContext(EstadoContext)
+    const dados = useCodigoGerado(estado)
+
     const [copiado, setCopiado] = useState(false)
-    const dados = useCodigoGerado()
     
     const { copiar } = copiarCodigo()
     

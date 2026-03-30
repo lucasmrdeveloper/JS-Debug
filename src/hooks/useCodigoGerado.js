@@ -1,10 +1,4 @@
-import { useContext } from "react"
-import { EstadoContext } from "../context/EstadoContext"
-
-
-function useCodigoGerado() {
-    const { estado } = useContext(EstadoContext)
-
+function useCodigoGerado(estado) {
     const { 
         titulo, 
         descricao, 
