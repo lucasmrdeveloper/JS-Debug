@@ -5,7 +5,7 @@ import { useContext, useState } from "react";
 import { EstadoContext } from "../../../context/EstadoContext";
 
 // Lógica
-import useCodigoGerado from "../../../hooks/useCodigoGerado";
+import gerarCodigo from "../../../hooks/gerarCodigo";
 import copiarCodigo from "../../../hooks/copiarCodigo";
 
 // CSS
@@ -17,7 +17,7 @@ function CodigoGerado() {
     console.log('%c ===== Codigo ===== ', 'color: #00ff88; background: #1a1a2e; font-size: 14px; font-weight: bold; padding: 8px 16px; border-radius: 4px');
 
     const { estado } = useContext(EstadoContext)
-    const dados = useCodigoGerado(estado)
+    const dados = gerarCodigo(estado)
 
     const [copiado, setCopiado] = useState(false)
     

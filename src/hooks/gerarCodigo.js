@@ -1,4 +1,4 @@
-function useCodigoGerado(estado) {
+function gerarCodigo(estado) {
     const { 
         titulo, 
         descricao, 
@@ -31,4 +31,4 @@ function useCodigoGerado(estado) {
     }
 }
 
-export default useCodigoGerado
+export default gerarCodigo
