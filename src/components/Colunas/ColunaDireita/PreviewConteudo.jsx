@@ -5,8 +5,6 @@ import formatarDadosPreview from "../../../hooks/formatarDadosPreview";
 function PreviewConteudo( contexto ) {
     const preview = formatarDadosPreview(contexto)
 
-    console.log("preview", preview)
-
     return(
         <>
            <div className="preview-conteudo" style={preview.box}>
