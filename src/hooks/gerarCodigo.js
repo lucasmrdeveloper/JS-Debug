@@ -18,15 +18,6 @@ function gerarCodigo(estado) {
     
 
     return{
-        titulo, 
-        descricao, 
-        corTexto, 
-        corFundo, 
-        tamanhoFonte, 
-        pesoFonte,
-        espacamento,
-        raioBorda,
-        borda,
         codigoGerado
     }
 }
