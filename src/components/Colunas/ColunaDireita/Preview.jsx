@@ -1,12 +1,14 @@
-// CSS
-import "../../../styles/layout/preview.css"
+// Hook
+import { useContext } from "react";
+
+// Contexto
+import { EstadoContext } from "../../../context/EstadoContext";
 
 // Componente
 import PreviewConteudo from "./PreviewConteudo";
 
-import usePreview from "../../../hooks/usePreview";
-import { EstadoContext } from "../../../context/EstadoContext";
-import { useContext } from "react";
+// CSS
+import "../../../styles/layout/preview.css"
 
 
 function Preview() {
