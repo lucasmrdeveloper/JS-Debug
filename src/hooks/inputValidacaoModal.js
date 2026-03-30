@@ -4,7 +4,6 @@ function inputValidacaoModal() {
         const valorInput = inputRef.current.value
     
         if (valorInput.trim() === "") {
-            inputRef.current.style.border = "1px solid red"
             setErro("O campo está vazio, digite um nome para o preset.")
         }
     }

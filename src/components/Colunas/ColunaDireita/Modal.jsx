@@ -33,6 +33,7 @@ function Modal() {
                     id="preset-nome" 
                     ref={inputRef} 
                     onChange={() => setErro("")}
+                    style={{border: erro ? "1px solid red" : "1px solid #dedee3"}}
                 ></input>
 
                 {erro && <p className="preset-input-vazio">{erro}</p>}
