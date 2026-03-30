@@ -1,11 +1,12 @@
-// CSS
-import "../../../styles/layout/codigo-gerado.css"
+// Hook
+import { useState } from "react";
 
 // Lógica
 import useCodigoGerado from "../../../hooks/useCodigoGerado";
 import copiarCodigo from "../../../hooks/copiarCodigo";
 
-import { useRef, useState } from "react";
+// CSS
+import "../../../styles/layout/codigo-gerado.css"
 
 
 function CodigoGerado() {
