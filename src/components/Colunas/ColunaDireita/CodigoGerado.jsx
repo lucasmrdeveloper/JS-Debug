@@ -13,14 +13,16 @@ import "../../../styles/layout/codigo-gerado.css"
 
 
 function CodigoGerado() {
-    console.log("\n\n")
-    console.log('%c ===== Codigo ===== ', 'color: #00ff88; background: #1a1a2e; font-size: 14px; font-weight: bold; padding: 8px 16px; border-radius: 4px');
-
+    // Contexto
     const { estado } = useContext(EstadoContext)
+    
+    // Recebe código gerado
     const dados = gerarCodigo(estado)
 
+    // Cria estado para copiar
     const [copiado, setCopiado] = useState(false)
     
+    // Pega função copiar()
     const { copiar } = copiarCodigo()
     
     return(
