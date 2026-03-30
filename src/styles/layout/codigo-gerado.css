@@ -34,12 +34,9 @@
     line-height: 25px;
     position: relative;
     top: -12px;
+    white-space: pre;
 }
 
 .codigo-gerado-console{
     color: #ffebbf;
-}
-
-.codigo-gerado-css{
-    white-space: pre;
 }
