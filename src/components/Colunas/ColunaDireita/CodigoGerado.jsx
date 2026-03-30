@@ -48,12 +48,8 @@ function CodigoGerado() {
                     </span>
                 </div>
 
-                <code className="codigo-gerado" >
-                    <span className="codigo-gerado-console">console.log</span>
-                    <span className="codigo-gerado-css">
-                        {dados.codigoGerado}
-                    </span><br/>
-                    
+                <code className="codigo-gerado">
+                    {dados.codigoGerado}
                 </code>
             </div>
         </div>
