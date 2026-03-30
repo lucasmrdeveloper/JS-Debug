@@ -49,14 +49,10 @@ function CodigoGerado() {
                 </div>
 
                 <code className="codigo-gerado" >
-                    <span className="codigo-gerado-console">console.log</span>(
+                    <span className="codigo-gerado-console">console.log</span>
                     <span className="codigo-gerado-css">
-                        <br/>
-                        <span className="codigo-gerado-mensagem">"%c {titulo} {descricao}",</span> <br/>
-                        <span className="codigo-gerado-estilos">
-                            "color: {corTexto};  background-color: {corFundo};  font-size: {tamanhoFonte};  font-weight: {pesoFonte};  padding: {espacamento};  border-radius: {raioBorda}; border: {borda};"
-                        </span>
-                    </span><br/>)
+                        {dados.codigoGerado}
+                    </span><br/>
                     
                 </code>
             </div>
