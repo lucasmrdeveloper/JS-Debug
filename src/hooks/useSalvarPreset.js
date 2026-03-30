@@ -67,7 +67,7 @@ function useSalvarPreset() {
             return novosPresets
         })
 
-        fecharModal(dialogRef)
+        fecharModal(dialogRef, inputRef)
 
         const mensagem = "Preset adicionado"
 

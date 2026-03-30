@@ -7,8 +7,9 @@ function modalController() {
         dialogRef.current.showModal()
     }
 
-    function fecharModal(dialogRef) {
+    function fecharModal(dialogRef, inputRef) {
         dialogRef.current.close()
+        inputRef.current.value = ""
     }
 
     return{
