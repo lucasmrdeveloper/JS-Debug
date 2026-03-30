@@ -1,9 +1,11 @@
 // Lógica
-import usePreview from "../../../hooks/formatarDadosPreview";
+import formatarDadosPreview from "../../../hooks/formatarDadosPreview";
 
 
 function PreviewConteudo( contexto ) {
-    const preview = usePreview(contexto)
+    const preview = formatarDadosPreview(contexto)
+
+    console.log("preview", preview)
 
     return(
         <>
