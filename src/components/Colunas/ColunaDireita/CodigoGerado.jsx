@@ -19,18 +19,6 @@ function CodigoGerado() {
     const { estado } = useContext(EstadoContext)
     const [copiado, setCopiado] = useState(false)
     const dados = useCodigoGerado()
-
-    const {   
-        titulo, 
-        descricao, 
-        corTexto, 
-        corFundo, 
-        tamanhoFonte, 
-        pesoFonte,
-        espacamento,
-        raioBorda,
-        borda,
-    } = dados
     
     const { copiar } = copiarCodigo()
     
