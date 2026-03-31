@@ -2,7 +2,7 @@ import { useContext } from "react";
 
 // Contextos
 import { EstadoContext } from "../context/EstadoContext"
-import { NomePresetContext } from "../context/NomePresetContext"
+import { PresetContext } from "../context/PresetContext"
 
 // Lógica
 import modalController from "./modalController";
@@ -12,7 +12,7 @@ import notificacao from "./notificacao";
 
 function useSalvarPreset() {
     // Contextos
-    const { setPreset } = useContext(NomePresetContext)
+    const { setPreset } = useContext(PresetContext)
     const { estado } = useContext(EstadoContext)
 
     // Retorna a função fecharModal

@@ -1,6 +1,6 @@
 // Context
 import { useContext, useState } from "react"
-import { NomePresetContext } from "../../context/NomePresetContext"
+import { PresetContext } from "../../context/PresetContext"
 
 // Componente
 import PreviewConteudo from "../Colunas/ColunaDireita/PreviewConteudo";
@@ -11,7 +11,7 @@ import copiarCodigo from "../../hooks/copiarCodigo";
 
 
 function PresetSalvo() {
-    const { preset, setPreset } = useContext(NomePresetContext)
+    const { preset, setPreset } = useContext(PresetContext)
     
     const { copiar } = copiarCodigo()
     const { remover } = removerPreset()

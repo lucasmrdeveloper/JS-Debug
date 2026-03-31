@@ -11,7 +11,7 @@ import MeusPresets from './components/MeusPresets/MeusPresets.jsx'
 
 import { useState } from 'react'
 import { EstadoContext } from './context/EstadoContext.jsx'
-import { NomePresetContext } from './context/NomePresetContext.jsx'
+import { PresetContext } from './context/PresetContext.jsx'
 import { NotificacaoContext } from './context/NotificacaoContext.jsx'
 
 import Notificacao from './components/Notificacao.jsx'
@@ -47,11 +47,11 @@ function Root() {
     return (
       <>
         <EstadoContext.Provider value={ {estado, setEstado} }>
-          <NomePresetContext.Provider value={ {preset, setPreset} }>
+          <PresetContext.Provider value={ {preset, setPreset} }>
             <NotificacaoContext.Provider value={ {notificacao, setNotificacao}}>
               <RouterProvider router={router}/>
             </NotificacaoContext.Provider>
-          </NomePresetContext.Provider>
+          </PresetContext.Provider>
         </EstadoContext.Provider>
 
         {notificacao && (<Notificacao texto={notificacao}/>)}
