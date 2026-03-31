@@ -25,17 +25,14 @@ function useSalvarPreset() {
 
 
     function salvar(inputRef, dialogRef) {
-        // Nome e código Gerado
-        const nomePreset = inputRef.current.value 
+        const nomePreset = inputRef.current.value.trim()
+        
+        if (!nomePreset) return
+
+        
         const codigoGerado = `console.log(
         "%c ${estado.titulo} ${estado.descricao}",
         "color: ${estado.corTexto};  background-color: ${estado.corFundo};  font-size: ${estado.tamanhoFonte};  font-weight: ${estado.pesoFonte};  padding: ${estado.espacamento};  border-radius: ${estado.raioBorda}; border: ${estado.borda};" \n)`
-
-        
-        // Valida se está vazio
-        if (nomePreset.trim() === ""){
-             return
-        } 
 
 
         // Atualiza estado
