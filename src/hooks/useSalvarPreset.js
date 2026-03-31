@@ -45,13 +45,15 @@ function useSalvarPreset() {
 
         setPreset((preset) => {
             const novosPresets = [
-                ...preset,
+                ...preset, 
                 criarPreset()
             ]
 
             salvarLocalStorage(novosPresets)
+            return novosPresets
         })
 
+   
         fecharModal(dialogRef, inputRef)
         gerarNotificacao("Preset adicionado")
     }

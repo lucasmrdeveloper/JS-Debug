@@ -22,12 +22,13 @@ const router = createBrowserRouter([
 ])
 
 function Root() {
-    const [preset, setPreset] = useState(() => {
+    /*const [preset, setPreset] = useState(() => {
       const data = localStorage.getItem("presets")
 
       return data ? JSON.parse(data) : []
-    })
+    })*/
 
+    const [preset, setPreset] = useState([{}])
   
     const [notificacao, setNotificacao] = useState(false)
     
