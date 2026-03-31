@@ -1,3 +1,4 @@
+// Hook
 import { useContext } from "react";
 
 // Contextos
@@ -10,20 +11,16 @@ import notificacao from "./notificacao";
 import gerarCodigo from "./gerarCodigo";
 
 
-
 function useSalvarPreset() {
-    // Contextos
-    const { setPreset } = useContext(PresetContext)
     const { estado } = useContext(EstadoContext)
+    const { setPreset } = useContext(PresetContext)
 
-    // Retorna a função fecharModal
     const { fecharModal } = modalController()
-
     const { gerarNotificacao } = notificacao()
 
     const codigoGerado = gerarCodigo(estado)
     
-    
+
     function salvar(inputRef, dialogRef) {
         const nomePreset = inputRef.current.value.trim()
         if (!nomePreset) return
