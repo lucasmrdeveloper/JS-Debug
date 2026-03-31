@@ -6,8 +6,6 @@ function removerPreset() {
     
     function remover(item, setPreset){
         const id = item.id
-
-        console.log("id", id)
         
         setPreset((prev) => prev.filter(item => item.id !== id))
 

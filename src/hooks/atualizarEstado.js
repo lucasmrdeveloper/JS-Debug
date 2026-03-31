@@ -1,11 +1,7 @@
 function atualizarEstado(e, estado, setEstado) {
     const dataset = e.target.dataset.input
 
-    console.log("data", dataset)
-
     if (dataset === "titulo") {
-        console.log("if: titulo")
-        
         setEstado((estado) => ({
             ...estado,
 
@@ -14,8 +10,6 @@ function atualizarEstado(e, estado, setEstado) {
     }
 
     if (dataset === "mensagem") {
-        console.log("if: mensagem")
-        
         setEstado((estado) => ({
             ...estado,
 
@@ -24,8 +18,6 @@ function atualizarEstado(e, estado, setEstado) {
     }
     
     if (dataset === "cor-texto") {
-        console.log("if: cor-texto")
-        
         setEstado((estado) => ({
             ...estado,
 
@@ -34,8 +26,6 @@ function atualizarEstado(e, estado, setEstado) {
     }
 
     if (dataset === "cor-fundo") {
-        console.log("if: cor-fundo")
-        
         setEstado((estado) => ({
             ...estado,
 
@@ -44,8 +34,6 @@ function atualizarEstado(e, estado, setEstado) {
     }
 
     if (dataset === "tamanho-fonte") {
-        console.log("if: tamanho-fonte")
-        
         setEstado((estado) => ({
             ...estado,
 
@@ -54,8 +42,6 @@ function atualizarEstado(e, estado, setEstado) {
     }
 
     if (dataset === "peso-fonte") {
-        console.log("if: peso-fonte")
-        
         setEstado((estado) => ({
             ...estado,
 
@@ -64,8 +50,6 @@ function atualizarEstado(e, estado, setEstado) {
     }
 
     if (dataset === "espacamento") {
-        console.log("if: espacamento")
-        
         setEstado((estado) => ({
             ...estado,
 
@@ -74,8 +58,6 @@ function atualizarEstado(e, estado, setEstado) {
     }
 
     if (dataset === "raio-borda") {
-        console.log("if: raio-borda")
-        
         setEstado((estado) => ({
             ...estado,
 
@@ -84,8 +66,6 @@ function atualizarEstado(e, estado, setEstado) {
     }
 
     if (dataset === "borda") {
-        console.log("if: borda")
-        
         setEstado((estado) => ({
             ...estado,
 

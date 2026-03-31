@@ -11,9 +11,6 @@ import notificacao from "./notificacao";
 
 
 function useSalvarPreset() {
-    console.log("\n\n")
-    console.log('%c ===== Salvar Preset ===== ', 'color: #00ff88; background: #1a1a2e; font-size: 14px;   font-weight: bold; padding: 8px 16px; border-radius: 4px');
-
     // Contextos
     const { setPreset } = useContext(NomePresetContext)
     const { estado } = useContext(EstadoContext)

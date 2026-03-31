@@ -6,16 +6,11 @@ function notificacao() {
     const { notificacao, setNotificacao } = useContext(NotificacaoContext)
 
     function gerarNotificacao(mensagem) {
-        console.log("mensagem", mensagem)
-
-        
         setNotificacao(mensagem)
         
         setTimeout(() => {
             setNotificacao(null)
         }, 3000)
-            
-        console.log("notificacao context", notificacao)
     }
 
     return{

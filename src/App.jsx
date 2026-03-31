@@ -16,8 +16,6 @@ import { useContext } from 'react'
 function App() {
   const { notificacao, setNotificacao } = useContext(NotificacaoContext)
 
-  console.log("App notificacao", notificacao)
-
   return (
     <>
       {notificacao && (<Notificacao texto={notificacao}/>)}
