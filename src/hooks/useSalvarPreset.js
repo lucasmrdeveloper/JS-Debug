@@ -42,11 +42,6 @@ function useSalvarPreset() {
             localStorage.setItem("presets", JSON.stringify(novosPresets))
         }
 
-        function notificarPresetSalvo() {
-            const mensagem = "Preset adicionado"
-            gerarNotificacao(mensagem)
-        }
-
 
         setPreset((preset) => {
             const novosPresets = [
@@ -58,7 +53,7 @@ function useSalvarPreset() {
         })
 
         fecharModal(dialogRef, inputRef)
-        notificarPresetSalvo()
+        notificarPresetSalvo("Preset adicionado")
     }
 
     return{
