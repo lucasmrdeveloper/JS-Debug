@@ -11,10 +11,10 @@ import "../../../styles/layout/modal.css"
 function Modal() {
     const [erro, setErro] = useState("")
 
-    const { abrirModal, fecharModal } = modalController()
+    const { abrir, fechar, dialogRef } = modalController()
     const { hundleSalvar } = validarInputModal()
 
-    const dialogRef = useRef(null)
+
     const inputRef = useRef(null)
 
     return(
@@ -37,7 +37,7 @@ function Modal() {
 
                 <div className="preset-salvar-btns">
                     <button className="preset-btn-cancelar" 
-                        onClick={() => fecharModal(dialogRef, inputRef)}>Cancelar</button>
+                        onClick={fechar}>Cancelar</button>
 
                     <button className="preset-btn-salvar"
                         onClick={() => hundleSalvar(inputRef, dialogRef, setErro)}>Salvar Preset</button>
@@ -45,7 +45,7 @@ function Modal() {
             </dialog>
 
 
-            <button className="preset-btn-modal" onClick={() => abrirModal(dialogRef)}>Salvar Preset</button>
+            <button className="preset-btn-modal" onClick={abrir}>Salvar Preset</button>
         </>
     )
 }

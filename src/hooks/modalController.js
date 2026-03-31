@@ -1,16 +1,26 @@
-function modalController() {
-    function abrirModal(dialogRef) {
-        dialogRef.current.showModal()
-    }
+import { useEffect, useRef, useState } from "react"
 
-    function fecharModal(dialogRef, inputRef) {
-        dialogRef.current.close()
-        inputRef.current.value = ""
-    }
+function modalController() {
+    const [modal, setModal] = useState(false)
+    const dialogRef = useRef(null)
+
+    const abrir = () => setModal(true)
+    const fechar = () => setModal(false)
+
+    useEffect(() => {
+        if (!dialogRef.current) return;
+        
+        if (modal) {
+            dialogRef.current.showModal();
+        } else {
+            dialogRef.current.close();
+        }
+    }, [modal]);
 
     return{
-        abrirModal,
-        fecharModal
+        abrir,
+        fechar,
+        dialogRef
     }
 }
 
