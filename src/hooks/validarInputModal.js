@@ -5,8 +5,9 @@ function validarInputModal() {
 
     function hundleSalvar(inputRef, dialogRef, setErro) {
         const nomePreset = inputRef.current.value.trim()
+        const msgErro = "O campo está vazio, digite um nome para o preset."
     
-        !nomePreset ? setErro("erro") : salvar(inputRef, dialogRef, nomePreset)
+        !nomePreset ? setErro(msgErro) : salvar(inputRef, dialogRef, nomePreset)
     }
 
     return{
