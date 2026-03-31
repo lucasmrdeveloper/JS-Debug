@@ -13,7 +13,7 @@ import gerarCodigo from "./gerarCodigo";
 
 function useSalvarPreset() {
     // Contextos
-    const { preset, setPreset } = useContext(PresetContext)
+    const { setPreset } = useContext(PresetContext)
     const { estado } = useContext(EstadoContext)
 
     // Retorna a função fecharModal
