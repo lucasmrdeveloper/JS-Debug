@@ -53,7 +53,7 @@ function useSalvarPreset() {
         })
 
         fecharModal(dialogRef, inputRef)
-        notificarPresetSalvo("Preset adicionado")
+        gerarNotificacao("Preset adicionado")
     }
 
     return{
