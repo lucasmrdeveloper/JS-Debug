@@ -3,7 +3,7 @@ import { useRef, useState } from "react"
 
 // Lógica
 import modalController from "../../../hooks/modalController";
-import inputValidacaoModal from "../../../hooks/inputValidacaoModal";
+import validarInputModal from "../../../hooks/validarInputModal";
 import useSalvarPreset from "../../../hooks/useSalvarPreset";
 
 // CSS
@@ -13,7 +13,7 @@ function Modal() {
     const [erro, setErro] = useState("")
 
     const { abrirModal, fecharModal } = modalController()
-    const { hundleSalvar } = inputValidacaoModal()
+    const { hundleSalvar } = validarInputModal()
 
     const { salvar } = useSalvarPreset()
 

@@ -1,4 +1,4 @@
-function inputValidacaoModal() {
+function validarInputModal() {
 
     function hundleSalvar(inputRef, setErro) {
         const valorInput = inputRef.current.value
@@ -13,4 +13,4 @@ function inputValidacaoModal() {
     }
 }
 
-export default inputValidacaoModal
+export default validarInputModal
