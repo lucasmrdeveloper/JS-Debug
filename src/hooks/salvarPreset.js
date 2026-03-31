@@ -21,11 +21,7 @@ function salvarPreset() {
     const codigoGerado = gerarCodigo(estado)
     
 
-    function salvar(inputRef, dialogRef) {
-        const nomePreset = inputRef.current.value.trim()
-        if (!nomePreset) return
-
-
+    function salvar(inputRef, dialogRef, nomePreset) {
         function criarPreset() {
             return{
                 nomePreset,

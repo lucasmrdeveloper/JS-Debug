@@ -4,7 +4,6 @@ import { useRef, useState } from "react"
 // Lógica
 import modalController from "../../../hooks/modalController";
 import validarInputModal from "../../../hooks/validarInputModal";
-import salvarPreset from "../../../hooks/salvarPreset";
 
 // CSS
 import "../../../styles/layout/modal.css"
@@ -14,8 +13,6 @@ function Modal() {
 
     const { abrirModal, fecharModal } = modalController()
     const { hundleSalvar } = validarInputModal()
-
-    const { salvar } = salvarPreset()
 
     const dialogRef = useRef(null)
     const inputRef = useRef(null)
@@ -43,7 +40,7 @@ function Modal() {
                         onClick={() => fecharModal(dialogRef, inputRef)}>Cancelar</button>
 
                     <button className="preset-btn-salvar"
-                        onClick={() => salvar(inputRef, dialogRef, hundleSalvar(inputRef, setErro))}>Salvar Preset</button>
+                        onClick={() => hundleSalvar(inputRef, dialogRef, setErro)}>Salvar Preset</button>
                 </div>
             </dialog>
 
