@@ -7,6 +7,7 @@ import { PresetContext } from "../context/PresetContext"
 // Lógica
 import modalController from "./modalController";
 import notificacao from "./notificacao";
+import gerarCodigo from "./gerarCodigo";
 
 
 
@@ -19,6 +20,8 @@ function useSalvarPreset() {
     const { fecharModal } = modalController()
 
     const { gerarNotificacao } = notificacao()
+
+    const codigoGerado = gerarCodigo(estado)
     
     
     let novosPresets
@@ -30,11 +33,6 @@ function useSalvarPreset() {
         if (!nomePreset) return
 
         
-        const codigoGerado = `console.log(
-        "%c ${estado.titulo} ${estado.descricao}",
-        "color: ${estado.corTexto};  background-color: ${estado.corFundo};  font-size: ${estado.tamanhoFonte};  font-weight: ${estado.pesoFonte};  padding: ${estado.espacamento};  border-radius: ${estado.raioBorda}; border: ${estado.borda};" \n)`
-
-
         // Atualiza estado
         setPreset((preset) => {
             novosPresets = [
