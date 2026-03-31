@@ -11,7 +11,7 @@ import notificacao from "./notificacao";
 import gerarCodigo from "./gerarCodigo";
 
 
-function useSalvarPreset() {
+function salvarPreset() {
     const { estado } = useContext(EstadoContext)
     const { setPreset } = useContext(PresetContext)
 
@@ -60,4 +60,4 @@ function useSalvarPreset() {
     }
 }
 
-export default useSalvarPreset
+export default salvarPreset

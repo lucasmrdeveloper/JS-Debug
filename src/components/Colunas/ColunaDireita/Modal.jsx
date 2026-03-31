@@ -4,7 +4,7 @@ import { useRef, useState } from "react"
 // Lógica
 import modalController from "../../../hooks/modalController";
 import validarInputModal from "../../../hooks/validarInputModal";
-import useSalvarPreset from "../../../hooks/useSalvarPreset";
+import salvarPreset from "../../../hooks/salvarPreset";
 
 // CSS
 import "../../../styles/layout/modal.css"
@@ -15,7 +15,7 @@ function Modal() {
     const { abrirModal, fecharModal } = modalController()
     const { hundleSalvar } = validarInputModal()
 
-    const { salvar } = useSalvarPreset()
+    const { salvar } = salvarPreset()
 
     const dialogRef = useRef(null)
     const inputRef = useRef(null)
