@@ -3,7 +3,7 @@ import handlePreset from "../../hooks/handlePreset"
 
 
 function Preset( { preset, descricao, data} ) {
-    const { clicado } = handlePreset()
+    const { identificarClicado } = handlePreset()
 
     const cores = {
         sucesso: "#16A34A",
@@ -13,7 +13,7 @@ function Preset( { preset, descricao, data} ) {
     
     return(
         <>      
-            <div style={{ backgroundColor: cores[data] }} className="preset-item" onClick={clicado} data-preset={data}>
+            <div style={{ backgroundColor: cores[data] }} className="preset-item" onClick={identificarClicado} data-preset={data}>
                 <h2 className="preset-titulo">{preset}</h2>
                 <p className="preset-descricao">{descricao}</p>
             </div>

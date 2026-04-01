@@ -8,7 +8,7 @@ import { EstadoContext } from "../context/EstadoContext"
 function handlePreset() {
     const { setEstado } = useContext(EstadoContext)
 
-    function clicado(e) {
+    function identificarClicado(e) {
         const preset = e.currentTarget.dataset.preset
 
         validarPreset(preset)
@@ -50,7 +50,7 @@ function handlePreset() {
     }
 
     return{
-        clicado
+        identificarClicado
     }
 }
 
