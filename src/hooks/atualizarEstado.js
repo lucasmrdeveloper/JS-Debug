@@ -1,4 +1,4 @@
-function atualizarEstado(e, estado, setEstado) {
+function atualizarEstado(e, setEstado) {
     const dataset = e.target.dataset.input
 
     if (dataset === "titulo") {
