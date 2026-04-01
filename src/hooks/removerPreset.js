@@ -1,4 +1,3 @@
-import { useContext } from "react"
 import notificacao from "./notificacao";
 
 function removerPreset() {
