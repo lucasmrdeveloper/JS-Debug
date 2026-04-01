@@ -9,8 +9,7 @@ function removerPreset() {
         
         setPreset((prev) => prev.filter(item => item.id !== id))
 
-        const mensagem = "Excluido Preset"
-        gerarNotificacao(mensagem)   
+        gerarNotificacao("Preset excluído")   
     }
 
     return {
