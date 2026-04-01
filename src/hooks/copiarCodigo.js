@@ -1,14 +1,18 @@
 function copiarCodigo() {
-
     function copiar(item, setCopy, index) {
-        setCopy(index)
+        if (index) {
+            setCopy(index)
+        }
+        else {
+            setCopy(true)
+        }
 
         navigator.clipboard.writeText(item.codigoGerado)
             .then(() =>console.log("texto Copiado"))
 
         setTimeout(() => {
-            setCopy(null)
-        }, 2000)
+            setCopy(false)
+        }, 3000)
     }
 
     return {
