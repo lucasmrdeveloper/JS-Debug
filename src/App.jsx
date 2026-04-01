@@ -14,7 +14,7 @@ import { useContext } from 'react'
 
 
 function App() {
-  const { notificacao, setNotificacao } = useContext(NotificacaoContext)
+  const { notificacao } = useContext(NotificacaoContext)
 
   return (
     <>

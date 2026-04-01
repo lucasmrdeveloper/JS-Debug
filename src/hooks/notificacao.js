@@ -3,7 +3,7 @@ import { NotificacaoContext } from "../context/NotificacaoContext"
 
 
 function notificacao() {
-    const { notificacao, setNotificacao } = useContext(NotificacaoContext)
+    const { setNotificacao } = useContext(NotificacaoContext)
 
     function gerarNotificacao(mensagem) {
         setNotificacao(mensagem)
