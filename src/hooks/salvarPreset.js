@@ -15,7 +15,7 @@ function salvarPreset() {
     const { estado } = useContext(EstadoContext)
     const { setPreset } = useContext(PresetContext)
 
-    const { fecharModal } = modalController()
+    const { fechar } = modalController()
     const { gerarNotificacao } = notificacao()
 
     const codigoGerado = gerarCodigo(estado)
@@ -47,7 +47,7 @@ function salvarPreset() {
         })
 
    
-        fecharModal(dialogRef, inputRef)
+        fechar()
         gerarNotificacao("Preset adicionado")
     }
 
