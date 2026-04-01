@@ -34,7 +34,7 @@ function PresetSalvo() {
                             </div>
 
                             <div className="preset-salvo-btns">
-                                <button className="preset-salvo-copiar" onClick={() => copiar(item, setCopy, index)}>{copy === index ? "Copiado" : "Copiar"}</button>
+                                <button className="preset-salvo-copiar" onClick={() => copiar(item.codigoGerado, setCopy, index)}>{copy === index ? "Copiado" : "Copiar"}</button>
                                 <button className="preset-salvo-excluir" onClick={() => remover(item, setPreset)}>Excluir</button>
                             </div>
                         </div>
@@ -44,6 +44,7 @@ function PresetSalvo() {
         </>
    )
 } 
+
 
 
 export default PresetSalvo
