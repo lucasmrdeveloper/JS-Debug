@@ -16,24 +16,24 @@ Com essa ferramenta, você pode estilizar seus console.log() de forma intuitiva,
 
 
 ## ✔️ Funcionalidades
-- Editor visual de estilos
-- Preview em tempo real (simulando console)
-- Geração automática do código
-- Copiar código com um clique
-- Salvamento dos presets personalizados
+- 🎨 Editor visual de estilos
+- 💻 Preview em tempo real (simulando console)
+- ⚙️ Geração automática do código
+- 📋 Copiar código com um clique
+- 💾 Salvamento dos presets personalizados
 
 
-## Conceitos Aplicados
+## 🧩 Conceitos Aplicados
 Este projeto foi desenvolvido para praticar e demonstrar:
 
 - Manipulação de estado
 - Componetização 
 - Separação de responsabilidades
-- LocalStorage
 - Geração dinâmica de código
+- LocalStorage
 
 
-## Tecnologias Utilizadas
+## ⚙️ Tecnologias Utilizadas
 - React
 - Javascript
 - CSS
@@ -46,3 +46,17 @@ Este projeto foi desenvolvido para praticar e demonstrar:
 3. Veja o preview em tempo real
 4. Copie o código gerado
 5. Use no seu projeto 
+
+
+## 📦 Instalação e Uso
+### Clone o repositório
+git clone https://github.com/lucasmrdeveloper/js-debug
+
+### Acesse a pasta
+cd js-debug
+
+### Instale as dependências
+npm install
+
+### Rode o projeto
+npm run dev
