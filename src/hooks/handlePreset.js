@@ -20,7 +20,6 @@ function handlePreset() {
                 ...estado,
                 
                 mensagem: "Sucesso",
-                descricao: "Código Rodou",
                 corTexto: "#FFFFFF",
                 corFundo: "#16A34A"
             }))
@@ -31,7 +30,6 @@ function handlePreset() {
                 ...estado,
 
                 mensagem: "Erro",
-                descricao: "Código Não Rodou",
                 corTexto: "#FFFFFF",
                 corFundo:  "#DC2626"
             }))
@@ -42,7 +40,6 @@ function handlePreset() {
                 ...estado,
 
                 mensagem: "Aviso",
-                descricao: "Mensagem de Aviso",
                 corTexto: "#000000",
                 corFundo:  "#EAB307"
             }))

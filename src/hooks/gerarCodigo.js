@@ -1,7 +1,6 @@
 function gerarCodigo(estado) {
     const { 
         mensagem, 
-        descricao, 
         corTexto, 
         corFundo, 
         tamanhoFonte, 
@@ -13,7 +12,7 @@ function gerarCodigo(estado) {
 
     
     const codigoGerado = `console.log(
-    "%c ${mensagem} ${descricao}",
+    "%c ${mensagem}",
     "color: ${corTexto};  background-color: ${corFundo};  font-size: ${tamanhoFonte};  font-weight: ${pesoFonte};  padding: ${espacamento};  border-radius: ${raioBorda}; border: ${borda};" \n)`
     
 

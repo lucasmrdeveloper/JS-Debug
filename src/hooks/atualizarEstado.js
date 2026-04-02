@@ -9,14 +9,6 @@ function atualizarEstado(e, setEstado) {
         }))
     }
 
-    if (dataset === "mensagem") {
-        setEstado((estado) => ({
-            ...estado,
-
-            descricao: e.target.value
-        }))
-    }
-    
     if (dataset === "cor-texto") {
         setEstado((estado) => ({
             ...estado,

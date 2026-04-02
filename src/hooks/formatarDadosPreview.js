@@ -4,7 +4,6 @@ function formatarDadosPreview(source) {
     if(source) {
         return {
             mensagem: source.mensagem,
-            descricao: source.descricao,
             id: source.id,
 
             box: {
