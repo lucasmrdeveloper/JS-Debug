@@ -38,11 +38,14 @@
     margin-top: 20px;
 }
 
-.preset-salvo-copiar{
+.preset-salvo-copiar,
+.preset-salvo-excluir{
     display: flex;
     align-items: center;
     gap: 5px;
+}
 
+.preset-salvo-copiar{
     background-color: #F8FAFC;
     border: 1px solid #dedee3;
     color: #000;
@@ -56,4 +59,9 @@
 .preset-salvo-excluir{
     background: #ffd0d0;
     color: #5d3c3c;
+}
+
+.preset-excluir-img{
+    width: 20px;
+    fill: #5d3c3c;
 }
