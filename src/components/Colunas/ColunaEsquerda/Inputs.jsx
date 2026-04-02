@@ -22,7 +22,7 @@ function Inputs() {
 
                 <h2 className="personalizar-titulo">Personalizar Estilo</h2>
 
-                <SectionBox titulo="Textos">
+                <SectionBox titulo="Texto">
                     <ItemInput
                         label="Mensagem"
                         id="mensagem"
