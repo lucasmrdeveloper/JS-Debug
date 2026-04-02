@@ -1,6 +1,6 @@
 function copiarCodigo() {
     function copiar(item, setCopy, index) {
-        if (index) {
+        if (index != undefined) {
             setCopy(index)
         }
         else {
