@@ -1,16 +1,19 @@
+// Hook
+import { useContext } from 'react'
+
 // Componentes
 import Header from './components/Header/Header'
 import Presets from './components/Presets/PresetsBox'
 import Colunas from "./components/Colunas/Colunas"
 import Notificacao from './components/Notificacao'
 
+// CSS
 import "./styles/base/reset.css"
 import "./styles/base/base.css"
 import "./styles/layout/responsivo.css"
 
+// Contexto
 import { NotificacaoContext } from './context/NotificacaoContext'
-import { useContext } from 'react'
-
 
 
 function App() {
@@ -23,7 +26,6 @@ function App() {
       <Header />
       <Presets />
       <Colunas />
-
     </>
   )
 }
