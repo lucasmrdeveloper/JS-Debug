@@ -32,9 +32,15 @@
 .codigo-gerado{
     color: #fff;
     line-height: 25px;
+    display: flex;
     position: relative;
     top: -12px;
     white-space: pre;
+}
+
+.codigo-gerado::after{
+    content: "";
+    padding-right: 20px;
 }
 
 .codigo-gerado-console{
