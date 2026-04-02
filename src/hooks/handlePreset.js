@@ -19,7 +19,7 @@ function handlePreset() {
             setEstado((estado) => ({
                 ...estado,
                 
-                titulo: "Sucesso",
+                mensagem: "Sucesso",
                 descricao: "Código Rodou",
                 corTexto: "#FFFFFF",
                 corFundo: "#16A34A"
@@ -30,7 +30,7 @@ function handlePreset() {
             setEstado((estado) => ({
                 ...estado,
 
-                titulo: "Erro",
+                mensagem: "Erro",
                 descricao: "Código Não Rodou",
                 corTexto: "#FFFFFF",
                 corFundo:  "#DC2626"
@@ -41,7 +41,7 @@ function handlePreset() {
             setEstado((estado) => ({
                 ...estado,
 
-                titulo: "Aviso",
+                mensagem: "Aviso",
                 descricao: "Mensagem de Aviso",
                 corTexto: "#000000",
                 corFundo:  "#EAB307"

@@ -1,11 +1,11 @@
 function atualizarEstado(e, setEstado) {
     const dataset = e.target.dataset.input
 
-    if (dataset === "titulo") {
+    if (dataset === "mensagem") {
         setEstado((estado) => ({
             ...estado,
 
-            titulo: e.target.value
+            mensagem: e.target.value
         }))
     }
 

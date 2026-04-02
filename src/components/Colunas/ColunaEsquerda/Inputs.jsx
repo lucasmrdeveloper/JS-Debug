@@ -26,8 +26,8 @@ function Inputs() {
                     <ItemInput
                         label="Mensagem"
                         id="mensagem"
-                        value={estado.titulo}
-                        data="titulo"
+                        value={estado.mensagem}
+                        data="mensagem"
                         setEstado={setEstado}
                     />
                 </SectionBox>

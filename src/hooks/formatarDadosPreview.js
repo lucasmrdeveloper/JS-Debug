@@ -3,7 +3,7 @@ function formatarDadosPreview(source) {
 
     if(source) {
         return {
-            titulo: source.titulo,
+            mensagem: source.mensagem,
             descricao: source.descricao,
             id: source.id,
 

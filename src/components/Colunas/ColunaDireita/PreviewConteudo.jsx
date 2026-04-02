@@ -8,7 +8,7 @@ function PreviewConteudo( contexto ) {
     return(
         <>
            <div className="preview-conteudo" style={preview.box}>
-                <h2 className="preview-conteudo-titulo" style={preview.textos}>{preview.titulo}</h2>
+                <h2 className="preview-conteudo-titulo" style={preview.textos}>{preview.mensagem}</h2>
                 <p className="preview-conteudo-descricao" style={preview.textos}>{preview.descricao}</p>
             </div> 
         </>
