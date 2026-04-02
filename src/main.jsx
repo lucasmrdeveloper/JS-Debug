@@ -1,20 +1,23 @@
 import { StrictMode} from 'react'
 import { createRoot } from 'react-dom/client'
 
-import { useEffect } from 'react'
-
+// React Router
 import { createBrowserRouter } from 'react-router'
 import { RouterProvider } from 'react-router'
 
+// Hook
+import { useState } from 'react'
+
+// Componetes
 import App from './App.jsx'
 import MeusPresets from './components/MeusPresets/MeusPresets.jsx'
+import Notificacao from './components/Notificacao.jsx'
 
-import { useState } from 'react'
+// Contextos
 import { EstadoContext } from './context/EstadoContext.jsx'
 import { PresetContext } from './context/PresetContext.jsx'
 import { NotificacaoContext } from './context/NotificacaoContext.jsx'
 
-import Notificacao from './components/Notificacao.jsx'
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
