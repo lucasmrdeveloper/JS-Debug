@@ -5,7 +5,7 @@ import atualizarEstado from "../../../hooks/atualizarEstado"
 function ItemInput( {label, id, value, data, setEstado} ) {
     return(
         <>
-            <div className="personalizar-item" style={{width: id === "espacamento" ? "100%" : "auto"}}>
+            <div className="personalizar-item" style={{width: id === "espacamento" || id === "mensagem" ? "100%" : "auto"}}>
                 <label htmlFor={id}>{label}</label>
                 
                 <input 
