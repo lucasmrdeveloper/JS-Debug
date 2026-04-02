@@ -40,7 +40,7 @@ function Modal() {
                         onClick={fechar}>Cancelar</button>
 
                     <button className="preset-btn-salvar"
-                        onClick={() => hundleSalvar(inputRef, dialogRef, setErro)}>Salvar Preset</button>
+                        onClick={() => hundleSalvar(inputRef, dialogRef, setErro, fechar)}>Salvar Preset</button>
                 </div>
             </dialog>
 
