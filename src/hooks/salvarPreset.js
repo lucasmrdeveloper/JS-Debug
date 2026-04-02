@@ -21,7 +21,7 @@ function salvarPreset() {
     const codigoGerado = gerarCodigo(estado)
     
 
-    function salvar(nomePreset) {
+    function salvar(nomePreset, fechar) {
         function criarPreset() {
             return{
                 nomePreset,
