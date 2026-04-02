@@ -25,24 +25,21 @@ Com essa ferramenta, você pode estilizar seus console.log() de forma intuitiva,
 
 <br>
 
-
 ## 🧩 Conceitos Aplicados
 Este projeto foi desenvolvido aplicando diversos conceitos importantes de React e JavaScript moderno:
 
-
 - Componetização 
+- Manipulação de estado com useState
+- Renderização condicional
+- Renderização de listas com map()
 - Compartilhamento de dados com Props e useContext
 - Manipulação de eventos (onClick e onChange)
-- Renderização condicional
-- Manipulação de estado com useState
 - Seleção de elementos com useRef
+- Tratamento de eventos com funções handler
 - Rotas com React Router
 - Desestruturação de objetos
-- Renderização de listas com map()
 - Manipulação de arrays com filter()
 - LocalStorage
-- Separação de responsabilidades
-- Geração dinâmica de código
 
 <br>
 
