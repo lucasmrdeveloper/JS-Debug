@@ -14,23 +14,35 @@ Logs desorganizados e difíceis de visualizar no console.
 
 Com essa ferramenta, você pode estilizar seus console.log() de forma intuitiva, criando logs mais visuais, padronizados e fáceis de identificar durante o debug.
 
+<br>
 
 ## ✔️ Funcionalidades
 - 🎨 Editor visual de estilos
 - 💻 Preview em tempo real (simulando console)
 - ⚙️ Geração automática do código
 - 📋 Copiar código com um clique
-- 💾 Salvamento dos presets personalizados <br><br><br>
+- 💾 Salvamento dos presets personalizados 
+
+<br>
 
 
 ## 🧩 Conceitos Aplicados
 Este projeto foi desenvolvido para praticar e demonstrar:
 
-- Manipulação de estado
+
 - Componetização 
+- Compartilhamento de dados com Props e useContext
+- Manipulação de eventos (onClick e onChange)
+- Renderização condicional
+- Manipulação de estado com useState
+- Seleção de elementos com useRef
+- Rotas com React Router
+- Desestruturação de objetos
+- Renderização de listas com map()
+- Manipulação de arrays com filter()
+- LocalStorage
 - Separação de responsabilidades
 - Geração dinâmica de código
-- LocalStorage
 
 <br>
 
