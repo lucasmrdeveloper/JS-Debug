@@ -20,9 +20,8 @@ Com essa ferramenta, você pode estilizar seus console.log() de forma intuitiva,
 - 💻 Preview em tempo real (simulando console)
 - ⚙️ Geração automática do código
 - 📋 Copiar código com um clique
-- 💾 Salvamento dos presets personalizados
+- 💾 Salvamento dos presets personalizados <br><br><br>
 
-<br><br>
 
 ## 🧩 Conceitos Aplicados
 Este projeto foi desenvolvido para praticar e demonstrar:
@@ -39,7 +38,7 @@ Este projeto foi desenvolvido para praticar e demonstrar:
 - React
 - Javascript
 - CSS
-- LocalStorage
+- HTML
 
 <br>
 
