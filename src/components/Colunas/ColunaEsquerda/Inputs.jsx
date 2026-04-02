@@ -24,18 +24,10 @@ function Inputs() {
 
                 <SectionBox titulo="Textos">
                     <ItemInput
-                        label="Título"
-                        id="titulo"
-                        value={estado.titulo}
-                        data="titulo"
-                        setEstado={setEstado}
-                    />
-
-                    <ItemInput
                         label="Mensagem"
                         id="mensagem"
-                        value={estado.descricao}
-                        data="mensagem"
+                        value={estado.titulo}
+                        data="titulo"
                         setEstado={setEstado}
                     />
                 </SectionBox>
