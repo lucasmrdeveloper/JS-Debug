@@ -35,7 +35,7 @@ function Root() {
       corTexto: "#ffffff",
       corFundo: "#000000",
       tamanhoFonte: "16px",
-      pesoFonte: "400",
+      pesoFonte: "600",
       espacamento: "10px 10px",
       raioBorda: "5px",
       borda: "none",
