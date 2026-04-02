@@ -10,7 +10,8 @@
     filter: drop-shadow(2px 4px 6px #e5e5e5);
 }
 
-.codigo-box::-webkit-scrollbar {
+.codigo-box::-webkit-scrollbar,
+.codigo-box::-webkit-scrollbar-track  {
     background: #fff;
     border-radius: 0 0 10px 10px;
 }
