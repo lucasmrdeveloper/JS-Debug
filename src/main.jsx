@@ -11,7 +11,7 @@ import { useState } from 'react'
 // Componetes
 import App from './App.jsx'
 import MeusPresets from './components/MeusPresets/MeusPresets.jsx'
-import Notificacao from './components/Notificacao.jsx'
+import Notificacao from './components/Notificacao/Notificacao.jsx'
 
 // Contextos
 import { EstadoContext } from './context/EstadoContext.jsx'

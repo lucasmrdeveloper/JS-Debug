@@ -1,4 +1,4 @@
-import "../styles/layout/notificacao.css"
+import "../../styles/layout/notificacao.css"
 
 function Notificacao( {texto} ) {
     return(
