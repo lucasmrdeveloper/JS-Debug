@@ -7,7 +7,19 @@
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+    filter: drop-shadow(2px 4px 6px #e5e5e5);
 }
+
+.codigo-box::-webkit-scrollbar {
+    background: #fff;
+    border-radius: 0 0 10px 10px;
+}
+
+.codigo-box::-webkit-scrollbar-thumb {
+    background: #c5c7c9;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #dedee3;
+}   
 
 .codigo-copiar{
     position: sticky;
