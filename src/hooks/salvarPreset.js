@@ -48,7 +48,7 @@ function salvarPreset() {
 
    
         fechar()
-        gerarNotificacao("Preset adicionado")
+        gerarNotificacao("Preset salvo com sucesso!")
     }
 
     return{
