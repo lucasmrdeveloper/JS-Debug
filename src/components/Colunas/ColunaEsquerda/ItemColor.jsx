@@ -2,7 +2,7 @@
 import atualizarEstado from "../../../hooks/atualizarEstado"
 
 
-function itemColor( {label, id, value, data, estado, setEstado} ) {
+function itemColor( {label, id, value, data, setEstado} ) {
     
     return(
         <div className="personalizar-item">
@@ -14,14 +14,14 @@ function itemColor( {label, id, value, data, estado, setEstado} ) {
                     id={id} 
                     value={value}
                     data-input={data} 
-                    onChange={(e) => atualizarEstado(e, estado, setEstado)}
+                    onChange={(e) => atualizarEstado(e, setEstado)}
                 />
                 
                 <input 
                     type="text" 
                     value={value} 
                     data-input={data} 
-                    onChange={(e) => atualizarEstado(e, estado, setEstado)}
+                    onChange={(e) => atualizarEstado(e, setEstado)}
                 />
             </div>
         </div>

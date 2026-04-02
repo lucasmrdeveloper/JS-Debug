@@ -2,7 +2,7 @@
 import atualizarEstado from "../../../hooks/atualizarEstado"
 
 
-function ItemInput( {label, id, value, data, estado, setEstado} ) {
+function ItemInput( {label, id, value, data, setEstado} ) {
     return(
         <>
             <div className="personalizar-item" style={{width: id === "espacamento" ? "100%" : "auto"}}>
@@ -13,7 +13,7 @@ function ItemInput( {label, id, value, data, estado, setEstado} ) {
                     id={id}
                     value={value}
                     data-input={data}
-                    onChange={(e) => atualizarEstado(e, estado, setEstado)}
+                    onChange={(e) => atualizarEstado(e, setEstado)}
                 />
             </div>
         </>

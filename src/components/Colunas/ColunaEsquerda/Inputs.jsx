@@ -28,7 +28,6 @@ function Inputs() {
                         id="titulo"
                         value={estado.titulo}
                         data="titulo"
-                        estado={estado}
                         setEstado={setEstado}
                     />
 
@@ -37,7 +36,6 @@ function Inputs() {
                         id="mensagem"
                         value={estado.descricao}
                         data="mensagem"
-                        estado={estado}
                         setEstado={setEstado}
                     />
                 </SectionBox>
@@ -48,7 +46,6 @@ function Inputs() {
                         id="cor-texto"
                         value={estado.corTexto}
                         data="cor-texto"
-                        estado={estado}
                         setEstado={setEstado}
                     />
 
@@ -57,7 +54,6 @@ function Inputs() {
                         id="cor-fundo"
                         value={estado.corFundo}
                         data="cor-fundo"
-                        estado={estado}
                         setEstado={setEstado}
                     />
                 </SectionBox>
@@ -68,7 +64,6 @@ function Inputs() {
                         id="tamanho-fonte"
                         value={estado.tamanhoFonte}
                         data="tamanho-fonte"
-                        estado={estado}
                         setEstado={setEstado}
                     />
 
@@ -77,7 +72,6 @@ function Inputs() {
                         id="peso-fonte"
                         value={estado.pesoFonte}
                         data="peso-fonte"
-                        estado={estado}
                         setEstado={setEstado}
                     />
                 </SectionBox>
@@ -88,7 +82,6 @@ function Inputs() {
                         id="espacamento"
                         value={estado.espacamento}
                         data="espacamento"
-                        estado={estado}
                         setEstado={setEstado}
                     />
                 </SectionBox>
@@ -99,7 +92,6 @@ function Inputs() {
                         id="raio-borda"
                         value={estado.raioBorda}
                         data="raio-borda"
-                        estado={estado}
                         setEstado={setEstado}
                     />
 
@@ -108,7 +100,6 @@ function Inputs() {
                         id="borda"
                         value={estado.borda}
                         data="borda"
-                        estado={estado}
                         setEstado={setEstado}
                     />
                 </SectionBox>
