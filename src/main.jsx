@@ -31,7 +31,7 @@ function Root() {
     const [notificacao, setNotificacao] = useState(false)
     
     const [estado, setEstado] = useState({
-      mensagem: "Debug:",
+      mensagem: "Debug: Verificando o código",
       corTexto: "#ffffff",
       corFundo: "#000000",
       tamanhoFonte: "16px",
