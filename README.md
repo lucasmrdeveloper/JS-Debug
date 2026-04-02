@@ -8,7 +8,7 @@ Uma aplicação para criar console.log personalizados de forma visual, facilitan
 
 
 ## 📌 Sobre o Projeto
-O JS Debug Styler foi criado para resolver um problema comum no dia a dia de desenvolvedores:
+O JS Debug foi criado para resolver um problema comum no dia a dia de desenvolvedores:
 
 Logs desorganizados e difíceis de visualizar no console.
 
@@ -22,7 +22,7 @@ Com essa ferramenta, você pode estilizar seus console.log() de forma intuitiva,
 - 📋 Copiar código com um clique
 - 💾 Salvamento dos presets personalizados
 
-<br>
+<br><br>
 
 ## 🧩 Conceitos Aplicados
 Este projeto foi desenvolvido para praticar e demonstrar:
