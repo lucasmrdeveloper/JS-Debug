@@ -8,7 +8,7 @@ function removerPreset() {
         
         setPreset((prev) => prev.filter(item => item.id !== id))
 
-        gerarNotificacao("Preset excluído")   
+        gerarNotificacao("Preset removido!")   
     }
 
     return {
