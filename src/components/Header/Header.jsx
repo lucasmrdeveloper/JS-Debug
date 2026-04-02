@@ -12,7 +12,7 @@ function Header() {
                 <div>
                     <Link to="/" className="logo">
                         <h1>JS Debug</h1>
-                        <p>Gerador de Console.log personalizados</p>
+                        <p>Gerador de console.logs personalizados</p>
                     </Link>
                 </div>
 
