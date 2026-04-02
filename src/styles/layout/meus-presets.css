@@ -39,9 +39,18 @@
 }
 
 .preset-salvo-copiar{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
     background-color: #F8FAFC;
     border: 1px solid #dedee3;
     color: #000;
+}
+
+.preset-copiar-img{
+    width: 20px;
+    fill: #000;
 }
 
 .preset-salvo-excluir{
