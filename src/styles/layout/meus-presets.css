@@ -39,8 +39,9 @@
 }
 
 .preset-salvo-copiar{
-    background: #DDECEB;
-    color: #3b9579;
+    background-color: #F8FAFC;
+    border: 1px solid #dedee3;
+    color: #000;
 }
 
 .preset-salvo-excluir{
