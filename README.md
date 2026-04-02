@@ -27,7 +27,7 @@ Com essa ferramenta, você pode estilizar seus console.log() de forma intuitiva,
 
 
 ## 🧩 Conceitos Aplicados
-Este projeto foi desenvolvido para praticar e demonstrar:
+Este projeto foi desenvolvido aplicando diversos conceitos importantes de React e JavaScript moderno:
 
 
 - Componetização 
