@@ -22,6 +22,7 @@ Com essa ferramenta, você pode estilizar seus console.log() de forma intuitiva,
 - 📋 Copiar código com um clique
 - 💾 Salvamento dos presets personalizados
 
+<br>
 
 ## 🧩 Conceitos Aplicados
 Este projeto foi desenvolvido para praticar e demonstrar:
@@ -32,6 +33,7 @@ Este projeto foi desenvolvido para praticar e demonstrar:
 - Geração dinâmica de código
 - LocalStorage
 
+<br>
 
 ## ⚙️ Tecnologias Utilizadas
 - React
@@ -39,6 +41,7 @@ Este projeto foi desenvolvido para praticar e demonstrar:
 - CSS
 - LocalStorage
 
+<br>
 
 ## 🧪 Exemplo de Uso
 1. Digite o texto do log
@@ -47,6 +50,7 @@ Este projeto foi desenvolvido para praticar e demonstrar:
 4. Copie o código gerado
 5. Use no seu projeto 
 
+<br>
 
 ## 📦 Instalação e Uso
 ### Clone o repositório
