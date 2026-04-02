@@ -1,16 +1,48 @@
-# React + Vite
+## 💻 JS Debug
+Uma aplicação para criar console.log personalizados de forma visual, facilitando a leitura e organização de logs durante o desenvolvimento em JavaScript.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<br>
 
-Currently, two official plugins are available:
+![JS Debug](/src/assets/JS-Debug.png)
+![Link para acesso]()
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+## 📌 Sobre o Projeto
+O JS Debug Styler foi criado para resolver um problema comum no dia a dia de desenvolvedores:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Logs desorganizados e difíceis de visualizar no console.
 
-## Expanding the ESLint configuration
+Com essa ferramenta, você pode estilizar seus console.log() de forma intuitiva, criando logs mais visuais, padronizados e fáceis de identificar durante o debug.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## ✔️ Funcionalidades
+- Editor visual de estilos
+- Preview em tempo real (simulando console)
+- Geração automática do código
+- Copiar código com um clique
+- Salvamento dos presets personalizados
+
+
+## Conceitos Aplicados
+Este projeto foi desenvolvido para praticar e demonstrar:
+
+- Manipulação de estado
+- Componetização 
+- Separação de responsabilidades
+- LocalStorage
+- Geração dinâmica de código
+
+
+## Tecnologias Utilizadas
+- React
+- Javascript
+- CSS
+- LocalStorage
+
+
+## 🧪 Exemplo de Uso
+1. Digite o texto do log
+2. Escolha cores e estilos
+3. Veja o preview em tempo real
+4. Copie o código gerado
+5. Use no seu projeto 
