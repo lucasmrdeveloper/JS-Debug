@@ -41,7 +41,7 @@ function handlePreset() {
 
                 mensagem: "Dados da API",
                 corTexto: "#fff",
-                corFundo:  "#2d799f"
+                corFundo:  "#0078D7"
             }))
         }
     }

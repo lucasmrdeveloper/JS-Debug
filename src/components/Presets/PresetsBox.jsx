@@ -24,7 +24,7 @@ function Presets() {
 
                     <Preset
                         preset="API"
-                        descricao="Log amarelo para dados da API"
+                        descricao="Log azul para dados da API"
                         data="api"
                     />
                 </div>
