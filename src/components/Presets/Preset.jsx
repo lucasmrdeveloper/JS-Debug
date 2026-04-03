@@ -8,7 +8,7 @@ function Preset( { preset, descricao, data} ) {
     const cores = {
         sucesso: "#16A34A",
         erro: "#DC2626",
-        aviso: "#EAB307"
+        api: "#2d799f"
     }
     
     return(

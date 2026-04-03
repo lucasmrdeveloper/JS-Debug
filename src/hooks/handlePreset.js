@@ -35,13 +35,13 @@ function handlePreset() {
             }))
         }
 
-        if (preset === "aviso") {
+        if (preset === "api") {
             setEstado((estado) => ({
                 ...estado,
 
-                mensagem: "Aviso: Mensagem de aviso",
-                corTexto: "#000000",
-                corFundo:  "#EAB307"
+                mensagem: "Dados da API",
+                corTexto: "#fff",
+                corFundo:  "#2d799f"
             }))
         }
     }
