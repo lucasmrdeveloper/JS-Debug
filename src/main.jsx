@@ -35,7 +35,7 @@ function Root() {
     
     const [estado, setEstado] = useState({
       mensagem: "Debug: Verificando o código",
-      corTexto: "#ffffff",
+      corTexto: "#FFFFFF",
       corFundo: "#000000",
       tamanhoFonte: "16px",
       pesoFonte: "600",

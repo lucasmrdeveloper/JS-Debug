@@ -40,7 +40,7 @@ function handlePreset() {
                 ...estado,
 
                 mensagem: "Dados da API",
-                corTexto: "#fff",
+                corTexto: "#FFFFFF",
                 corFundo:  "#0078D7"
             }))
         }
