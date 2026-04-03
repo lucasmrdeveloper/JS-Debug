@@ -4,7 +4,7 @@ Uma aplicação para criar console.log personalizados de forma visual, facilitan
 <br>
 
 ![JS Debug](/src/assets/JS-Debug.png)
-![Link para acesso](https://js-debug.vercel.app/)
+[Link para acesso](https://js-debug.vercel.app/)
 
 
 ## 📌 Sobre o Projeto
