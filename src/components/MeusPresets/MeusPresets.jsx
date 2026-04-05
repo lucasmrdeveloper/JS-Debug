@@ -9,6 +9,7 @@ import Notificacao from "../Notificacao/Notificacao"
 
 // CSS
 import "../../styles/layout/meus-presets.css"
+import "../../styles/layout/responsivo.css"
 
 
 function MeusPresets() {

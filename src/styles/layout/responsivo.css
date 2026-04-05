@@ -29,6 +29,10 @@
     .presets-itens {
         grid-template-columns: 1fr;
     }
+
+    .presets-salvos-box{
+        grid-template-columns: 1fr !important;
+    }
 }
 
 @media(max-width: 480px) {
