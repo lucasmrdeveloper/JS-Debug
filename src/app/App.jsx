@@ -13,7 +13,7 @@ import Notificacao from '../components/Notificacao/Notificacao'
 import "./styles/base/reset.css"
 import "./styles/base/base.css"
 import "./styles/layout/responsivo.css"
-
+import "./styles/colunas.css"
 
 // Contexto
 import { NotificacaoContext } from '../context/NotificacaoContext'
