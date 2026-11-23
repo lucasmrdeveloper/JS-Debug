@@ -1,5 +1,5 @@
 // CSS
-import "../../styles/layout/presets.css"
+import "./styles/Presets.css"
 
 // Componente
 import ItemPreset from "./ItemPreset"
