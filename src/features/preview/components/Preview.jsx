@@ -4,15 +4,13 @@ import { useContext } from "react";
 // Contexto
 import { EstadoContext } from "../../../context/EstadoContext";
 
-// Componente
-import PreviewConteudo from "./PreviewConteudo";
-
 // CSS
 import "./styles/Preview.css"
 
 
 function Preview() {
     const { estado } = useContext(EstadoContext)
+    const preview = formatarDadosPreview(estado)
 
     return(
        <div className="preview">
@@ -21,8 +19,6 @@ function Preview() {
 
             <div className="preview-itens">
                 <div className="preview-janela">Console</div>
-
-                <PreviewConteudo {... estado} />
             </div>
         </div> 
     )
