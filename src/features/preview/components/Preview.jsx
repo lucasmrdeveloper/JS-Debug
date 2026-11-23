@@ -8,7 +8,7 @@ import { EstadoContext } from "../../../context/EstadoContext";
 import PreviewConteudo from "./PreviewConteudo";
 
 // CSS
-import "../../../styles/layout/preview.css"
+import "./styles/Preview.css"
 
 
 function Preview() {
