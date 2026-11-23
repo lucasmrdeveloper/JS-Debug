@@ -10,9 +10,8 @@ import ColunaDireitaBox from '../components/Colunas/ColunaDireita/ColunaDireitaB
 import Notificacao from '../components/Notificacao/Notificacao'
 
 // CSS
-import "./styles/base/reset.css"
-import "./styles/base/base.css"
-import "./styles/layout/responsivo.css"
+import "./styles/reset.css"
+import "./styles/base.css"
 import "./styles/colunas.css"
 
 // Contexto
