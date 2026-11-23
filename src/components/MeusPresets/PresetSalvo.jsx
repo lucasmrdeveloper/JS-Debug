@@ -3,7 +3,7 @@ import { useContext, useState } from "react"
 import { PresetContext } from "../../context/PresetContext"
 
 // Componente
-import PreviewConteudo from "../Colunas/ColunaDireita/PreviewConteudo";
+import PreviewConteudo from "../../features/preview/components/PreviewConteudo";
 
 // Lógica Remover
 import removerPreset from "../../hooks/removerPreset";
