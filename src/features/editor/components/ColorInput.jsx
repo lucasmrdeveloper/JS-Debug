@@ -1,31 +1,30 @@
-// Lógica
-import atualizarEstado from "../../../hooks/atualizarEstado"
+import { useAtualizarEstado } from "../../../shared/useAtualizarEstado"
 
+function ColorInput( {label, id, value, data} ) {
+    const handleChange = useAtualizarEstado()
 
-function itemColor( {label, id, value, data, setEstado} ) {
-    
     return(
         <div className="personalizar-item">
             <label htmlFor={id}>{label}</label>
             
             <div className="personalizar-cores-box">
                 <input 
-                    type="color" 
-                    id={id} 
+                    type="color"  
                     value={value}
                     data-input={data} 
-                    onChange={(e) => atualizarEstado(e, setEstado)}
+                    onChange={(e) => handleChange(e)}
                 />
                 
                 <input 
                     type="text" 
+                    id={id}
                     value={value} 
                     data-input={data} 
-                    onChange={(e) => atualizarEstado(e, setEstado)}
+                    onChange={(e) => handleChange(e)}
                 />
             </div>
         </div>
     )
 }
 
-export default itemColor
+export default ColorInput
