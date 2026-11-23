@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import { EstadoContext } from "../context/EstadoContext"
 
-export const useAtualizarEstado = (e) => {
+export const useAtualizarEstado = () => {
     const { setEstado } = useContext(EstadoContext)
     
     return (e) => {
