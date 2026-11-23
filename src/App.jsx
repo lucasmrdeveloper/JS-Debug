@@ -4,7 +4,7 @@ import { useContext } from 'react'
 // Componentes
 import Header from './components/Header/Header'
 import Presets from './components/Presets/PresetsBox'
-import Colunas from "./components/Colunas/Colunas"
+import Colunas from './features/editor/components/Colunas'
 import Notificacao from './components/Notificacao/Notificacao'
 
 // CSS

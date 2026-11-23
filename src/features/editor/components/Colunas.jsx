@@ -1,9 +1,9 @@
 // Componentes
-import Inputs from "./ColunaEsquerda/Inputs"
-import ColunaDireitaBox from "./ColunaDireita/ColunaDireitaBox"
+import Inputs from "./Inputs"
+import ColunaDireitaBox from "../../../components/Colunas/ColunaDireita/ColunaDireitaBox"
 
 // CSS
-import "../../styles/layout/colunas.css"
+import "./styles/colunas.css"
 
 
 function Colunas() {

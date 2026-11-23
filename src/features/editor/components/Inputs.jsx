@@ -6,7 +6,7 @@ import { EstadoContext } from "../../../context/EstadoContext"
 
 // Componentes
 import SectionBox from "./SectionBox"
-import ItemInput from "../ColunaEsquerda/ItemInput"
+import ItemInput from "./ItemInput"
 import ItemColor from "./ItemColor"
 
 // CSS
