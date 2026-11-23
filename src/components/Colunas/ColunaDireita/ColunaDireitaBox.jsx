@@ -1,5 +1,5 @@
 // Componentes
-import Preview from "./Preview"
+import Preview from "../../../features/preview/components/Preview"
 import CodigoGerado from "./CodigoGerado"
 import Modal from "./Modal"
 
