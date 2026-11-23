@@ -1,8 +1,6 @@
-// CSS
-import "./styles/Presets.css"
-
-// Componente
 import ItemPreset from "./ItemPreset"
+
+import "./styles/Presets.css"
 
 const presets = [
     {
