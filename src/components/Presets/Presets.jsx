@@ -4,31 +4,41 @@ import "../../styles/layout/presets.css"
 // Componente
 import ItemPreset from "./ItemPreset"
 
+const presets = [
+    {
+        tipo: "Sucesso",
+        descricao: "Log verde para sucesso",
+        mensagem: "Sucesso: Código rodou",
+        cor: "#16A34A"
+    },
+    {
+        tipo: "Erro",
+        descricao: "Log vermelho para erros",
+        mensagem: "Erro:",
+        cor: "#DC2626"
+    },
+    {
+        tipo: "API",
+        descricao: "Log azul para dados da API",
+        mensagem: "API:",
+        cor: "#0078D7"
+    }
+]
+
 function Presets() {
     return(
-        <>  
-            <div className="presets-box">
-                <div className="presets-itens">
-                    <ItemPreset
-                        preset="Sucesso"
-                        descricao="Log verde para sucesso"
-                        data="sucesso"
+        <div className="presets-box">
+            <div className="presets-itens">
+                {presets.map(({ tipo, descricao, mensagem, cor }) =>
+                    <ItemPreset 
+                        tipo = {tipo}
+                        descricao = {descricao}
+                        mensagem = {mensagem}
+                        cor = {cor}
                     />
-
-                    <ItemPreset
-                        preset="Erro"
-                        descricao="Log vermelho para erros"
-                        data="erro"
-                    />
-
-                    <ItemPreset
-                        preset="API"
-                        descricao="Log azul para dados da API"
-                        data="api"
-                    />
-                </div>
+                )}
             </div>
-        </>
+        </div>
     )  
 }
 
