@@ -3,7 +3,7 @@ import { useContext } from 'react'
 
 // Componentes
 import Header from '../components/Header/Header'
-import Presets from '../components/Presets/PresetsBox'
+import Presets from '../features/presets/components/Presets'
 import Inputs from '../features/editor/components/Inputs'
 import ColunaDireitaBox from '../components/Colunas/ColunaDireita/ColunaDireitaBox'
 
