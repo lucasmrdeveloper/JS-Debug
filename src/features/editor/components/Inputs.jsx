@@ -1,102 +1,81 @@
-// Hook
 import { useContext } from "react"
 
-// Contexto
 import { EstadoContext } from "../../../context/EstadoContext"
 
-// Componentes
 import SectionBox from "./SectionBox"
-import ItemInput from "./ItemInput"
-import ItemColor from "./ItemColor"
+import ColorInput from "./ColorInput"
+import InputEditor from "./InputEditor"
 
-// CSS
 import "../../../styles/layout/personalizar.css"
-
 
 function Inputs() {
     const { estado, setEstado } = useContext(EstadoContext)
     
     return(
-        <>
-            <div className="coluna-esquerda">
+        <div className="coluna-esquerda">
 
-                <h2 className="personalizar-titulo">Personalizar Estilo</h2>
+            <h2 className="personalizar-titulo">Personalizar Estilo</h2>
 
-                <SectionBox titulo="Texto">
-                    <ItemInput
-                        label="Mensagem"
-                        id="mensagem"
-                        value={estado.mensagem}
-                        data="mensagem"
-                        setEstado={setEstado}
-                    />
-                </SectionBox>
+            <InputEditor 
+                label = "Mensagem"
+                id = "mensagem"
+                value = {estado.mensagem}
+                setEstado={setEstado}
+            />
+        
+            <SectionBox titulo="Texto">
+                <ColorInput 
+                    label = "Cor do Texto"
+                    id = "corTexto"
+                    value={estado.corTexto}
+                />
 
-                <SectionBox titulo="Cores">
-                    <ItemColor
-                        label="Cor do Texto"
-                        id="cor-texto"
-                        value={estado.corTexto}
-                        data="cor-texto"
-                        setEstado={setEstado}
-                    />
+                <ColorInput 
+                    label = "Cor do Fundo"
+                    id = "corFundo"
+                    value = {estado.corFundo}
+                />
+            </SectionBox>
 
-                    <ItemColor
-                        label="Cor do Fundo"
-                        id="cor-fundo"
-                        value={estado.corFundo}
-                        data="cor-fundo"
-                        setEstado={setEstado}
-                    />
-                </SectionBox>
+            <SectionBox>
+                <InputEditor 
+                    label="Tamanho da fonte"
+                    id="tamanhoFonte"
+                    value={estado.tamanhoFonte}
+                    setEstado={setEstado}
+                />
 
-                <SectionBox titulo="Tipografia">
-                    <ItemInput
-                        label="Tamanho da fonte"
-                        id="tamanho-fonte"
-                        value={estado.tamanhoFonte}
-                        data="tamanho-fonte"
-                        setEstado={setEstado}
-                    />
+                <InputEditor 
+                    label="Peso da fonte"
+                    id="pesoFonte"
+                    value={estado.pesoFonte}
+                    setEstado={setEstado}
+                />
+            </SectionBox>
 
-                    <ItemInput
-                        label="Peso da fonte"
-                        id="peso-fonte"
-                        value={estado.pesoFonte}
-                        data="peso-fonte"
-                        setEstado={setEstado}
-                    />
-                </SectionBox>
+            <InputEditor 
+                label="Espaçamento"
+                id="espacamento"
+                value={estado.espacamento}
+                setEstado={setEstado}
+            />
+      
+            <SectionBox>
+                <InputEditor 
+                    label="Raio da Borda"
+                    id="raioBorda"
+                    value={estado.raioBorda}
+                    setEstado={setEstado}
+                />
 
-                <SectionBox titulo="Espaçamentos">
-                    <ItemInput
-                        label="Padding"
-                        id="espacamento"
-                        value={estado.espacamento}
-                        data="espacamento"
-                        setEstado={setEstado}
-                    />
-                </SectionBox>
-
-                <SectionBox titulo="Bordas">
-                    <ItemInput
-                        label="Border Radius"
-                        id="raio-borda"
-                        value={estado.raioBorda}
-                        data="raio-borda"
-                        setEstado={setEstado}
-                    />
-
-                    <ItemInput
-                        label="Borda"
-                        id="borda"
-                        value={estado.borda}
-                        data="borda"
-                        setEstado={setEstado}
-                    />
-                </SectionBox>
-            </div>
-        </>
+                <InputEditor 
+                    label="Borda"
+                    id="borda"
+                    value={estado.borda}
+                    setEstado={setEstado}
+                />
+            </SectionBox>
+        </div>
     )
 }
 
