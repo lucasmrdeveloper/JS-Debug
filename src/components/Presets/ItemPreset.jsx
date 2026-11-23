@@ -2,7 +2,7 @@
 import handlePreset from "../../hooks/handlePreset"
 
 
-function Preset( { preset, descricao, data} ) {
+function ItemPreset( { preset, descricao, data} ) {
     const { identificarClicado } = handlePreset()
 
     const cores = {
@@ -21,4 +21,4 @@ function Preset( { preset, descricao, data} ) {
     )
 }
 
-export default Preset
+export default ItemPreset

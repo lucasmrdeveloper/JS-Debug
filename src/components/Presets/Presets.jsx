@@ -2,27 +2,26 @@
 import "../../styles/layout/presets.css"
 
 // Componente
-import Preset from "./Preset"
-
+import ItemPreset from "./ItemPreset"
 
 function Presets() {
     return(
         <>  
             <div className="presets-box">
                 <div className="presets-itens">
-                    <Preset
+                    <ItemPreset
                         preset="Sucesso"
                         descricao="Log verde para sucesso"
                         data="sucesso"
                     />
 
-                    <Preset
+                    <ItemPreset
                         preset="Erro"
                         descricao="Log vermelho para erros"
                         data="erro"
                     />
 
-                    <Preset
+                    <ItemPreset
                         preset="API"
                         descricao="Log azul para dados da API"
                         data="api"
