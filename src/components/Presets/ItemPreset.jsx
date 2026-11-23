@@ -1,23 +1,17 @@
-// Lógica
-import handlePreset from "../../hooks/handlePreset"
+import useHandlePreset from "../hook/useHandlePreset"
 
+const ItemPreset = ({ tipo, descricao, mensagem, cor }) => {
+    const handlePreset = useHandlePreset()
 
-function ItemPreset( { preset, descricao, data} ) {
-    const { identificarClicado } = handlePreset()
-
-    const cores = {
-        sucesso: "#16A34A",
-        erro: "#DC2626",
-        api: "#0078D7"
-    }
-    
-    return(
-        <>      
-            <div style={{ backgroundColor: cores[data] }} className="preset-item" onClick={identificarClicado} data-preset={data}>
-                <h2 className="preset-titulo">{preset}</h2>
-                <p className="preset-descricao">{descricao}</p>
-            </div>
-        </>
+    return (
+        <div
+            style={{ backgroundColor: cor }} 
+            className="preset-item"
+            onClick={() => handlePreset(mensagem, cor)}
+        >
+            <h2 className="preset-titulo">{tipo}</h2>
+            <p className="preset-descricao">{descricao}</p>
+        </div>
     )
 }
 
