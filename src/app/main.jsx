@@ -10,13 +10,13 @@ import { useState } from 'react'
 
 // Componetes
 import App from './App.jsx'
-import MeusPresets from './components/MeusPresets/MeusPresets.jsx'
-import Notificacao from './components/Notificacao/Notificacao.jsx'
+import MeusPresets from '../components/MeusPresets/MeusPresets.jsx'
+import Notificacao from '../components/Notificacao/Notificacao.jsx'
 
 // Contextos
-import { EstadoContext } from './context/EstadoContext.jsx'
-import { PresetContext } from './context/PresetContext.jsx'
-import { NotificacaoContext } from './context/NotificacaoContext.jsx'
+import { EstadoContext } from '../context/EstadoContext.jsx'
+import { PresetContext } from '../context/PresetContext.jsx'
+import { NotificacaoContext } from '../context/NotificacaoContext.jsx'
 
 
 const router = createBrowserRouter([
