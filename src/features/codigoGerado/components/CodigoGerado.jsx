@@ -6,8 +6,6 @@ import "./CodigoGerado.css"
 
 function CodigoGerado () {
     const codigo = useGerarCodigo()
-    const { codigoGerado } = codigo
-
     const { handleCopiar, copiado } = useHandleCopiar()
 
     return(
@@ -28,7 +26,7 @@ function CodigoGerado () {
                 </button>
 
                 <code className="codigo-gerado">
-                    {codigoGerado}
+                    {codigo}
                 </code>
             </div>
         </div>
