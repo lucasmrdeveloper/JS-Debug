@@ -2,10 +2,8 @@
 import { useContext } from "react"
 
 // Components
-import Header from "../../../components/Header/Header"
+import Header from "../../../layouts/Header/Header"
 import PresetSalvo from "../components/PresetSalvo"
-import Notificacao from "../../../components/Notificacao/Notificacao"
-
 
 // CSS
 import "../../styles/layout/meus-presets.css"
