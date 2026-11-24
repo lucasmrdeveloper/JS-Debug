@@ -19,9 +19,7 @@ function useGerarCodigo() {
     "%c${mensagem}",
     "color: ${corTexto};  background-color: ${corFundo};  font-size: ${tamanhoFonte};  font-weight: ${pesoFonte};  padding: ${espacamento};  border-radius: ${raioBorda}; border: ${borda};" \n)`
     
-    return {
-        codigoGerado
-    }
+    return codigoGerado
 }
 
 export default useGerarCodigo
