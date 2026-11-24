@@ -1,3 +1,9 @@
 .coluna-direita {
     width: 60%;
 }
+
+@media (max-width: 1024px) {
+    .coluna-direita {
+        width: 100%;
+    }
+}
