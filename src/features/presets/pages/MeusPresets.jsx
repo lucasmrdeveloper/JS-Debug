@@ -2,9 +2,9 @@
 import { useContext } from "react"
 
 // Components
-import Header from "../Header/Header"
-import PresetSalvo from "./PresetSalvo"
-import Notificacao from "../Notificacao/Notificacao"
+import Header from "../../../components/Header/Header"
+import PresetSalvo from "../components/PresetSalvo"
+import Notificacao from "../../../components/Notificacao/Notificacao"
 
 
 // CSS

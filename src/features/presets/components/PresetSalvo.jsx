@@ -1,10 +1,10 @@
 // Context
 import { useContext, useState } from "react"
-import { PresetContext } from "../../context/PresetContext"
+import { PresetContext } from "../../../context/PresetContext"
 
 // Lógica Remover
-import removerPreset from "../../hooks/removerPreset";
-import copiarCodigo from "../../shared/utils/copiarCodigo";
+import removerPreset from "../../../hooks/removerPreset";
+import copiarCodigo from "../../../shared/utils/copiarCodigo";
 
 
 function PresetSalvo() {
