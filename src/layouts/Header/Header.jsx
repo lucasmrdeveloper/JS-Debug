@@ -27,12 +27,14 @@ const Header = () => {
 
             <nav>
                 <ul className="header-menu-lista">
-                    {links.map(link => 
-                        <Link to={link.caminho}>
-                            <img src={link.icone} />
+                    {links.map(link =>
+                        <li>
+                            <Link to={link.caminho}>
+                                <img src={link.icone} />
 
-                            {link.nome}
-                        </Link>
+                                {link.nome}
+                            </Link>
+                        </li>
                     )}
                 </ul>
             </nav>
