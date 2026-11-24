@@ -1,20 +1,15 @@
-import { useState } from "react";
-
-import { useHandleCopiar } from "../hook/useHandleCopiar";
-
+import { useHandleCopiar } from "../hook/useHandleCopiar"
 import useGerarCodigo from "../../../shared/hooks/useGerarCodigo"
 
 import "./CodigoGerado.css"
 
 
 function CodigoGerado () {
-    const [copiado, setCopiado] = useState(false)
-
     const codigo = useGerarCodigo()
     const { codigoGerado } = codigo
 
-    const handleCopiar = useHandleCopiar()
-    
+    const { handleCopiar, copiado } = useHandleCopiar()
+
     return(
         <div className="codigo">
             <h2 className="codigo-titulo">Código Gerado</h2>
