@@ -17,28 +17,26 @@ const links = [
 
 function Header() {
     return(
-        <>
-            <header className="header-box">
-                <div>
-                    <Link to="/" className="logo">
-                        <h1>JS Debug</h1>
-                        <p>Gerador de console.logs personalizados</p>
-                    </Link>
-                </div>
+        <header className="header-box">
+            <div>
+                <Link to="/" className="logo">
+                    <h1>JS Debug</h1>
+                    <p>Gerador de console.logs personalizados</p>
+                </Link>
+            </div>
 
-                <nav>
-                    <ul className="header-menu-lista">
-                        {links.map(link => 
-                            <Link to={link.caminho}>
-                                <img src={link.icone} />
+            <nav>
+                <ul className="header-menu-lista">
+                    {links.map(link => 
+                        <Link to={link.caminho}>
+                            <img src={link.icone} />
 
-                                {link.nome}
-                            </Link>
-                        )}
-                    </ul>
-                </nav>
-            </header>
-        </>
+                            {link.nome}
+                        </Link>
+                    )}
+                </ul>
+            </nav>
+        </header>
     )
 }
 
