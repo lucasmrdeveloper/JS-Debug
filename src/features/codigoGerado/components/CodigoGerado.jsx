@@ -1,5 +1,5 @@
 import { useHandleCopiar } from "../hook/useHandleCopiar"
-import useGerarCodigo from "../../../shared/hooks/useGerarCodigo"
+import { useGerarCodigo } from "../../../shared/hooks/useGerarCodigo"
 
 import "./CodigoGerado.css"
 

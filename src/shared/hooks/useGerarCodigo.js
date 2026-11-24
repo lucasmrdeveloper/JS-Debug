@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import { EstadoContext } from "../../context/EstadoContext"
 
-function useGerarCodigo() {
+export function useGerarCodigo() {
     const { estado } = useContext(EstadoContext)
 
     const { 
@@ -21,5 +21,3 @@ function useGerarCodigo() {
     
     return codigoGerado
 }
-
-export default useGerarCodigo
