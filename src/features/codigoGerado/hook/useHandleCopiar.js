@@ -1,7 +1,6 @@
 import { copiarCodigo } from "../../../shared/utils/copiarCodigo"
 
-export const useHandleCopiar = (setCopiado) => {
-   
+export const useHandleCopiar = () => {
     return async (codigoGerado) => {
         try {
             await copiarCodigo(codigoGerado)

@@ -13,7 +13,7 @@ function CodigoGerado () {
     const codigo = useGerarCodigo()
     const { codigoGerado } = codigo
 
-    const handleCopiar = useHandleCopiar(setCopiado)
+    const handleCopiar = useHandleCopiar()
     
     return(
         <div className="codigo">
