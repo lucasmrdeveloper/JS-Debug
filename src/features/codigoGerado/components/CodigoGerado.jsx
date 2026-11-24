@@ -2,7 +2,7 @@
 import { useContext, useState } from "react";
 
 // Lógica
-import gerarCodigo from "../../../shared/hooks/useGerarCodigo";
+import useGerarCodigo from "../../../shared/hooks/useGerarCodigo"
 import copiarCodigo from "../../../hooks/copiarCodigo";
 
 // CSS
