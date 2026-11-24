@@ -6,7 +6,7 @@ import modalController from "../../../hooks/modalController";
 import validarInputModal from "../../../hooks/validarInputModal";
 
 // CSS
-import "../../../styles/layout/modal.css"
+import "./styles/modal.css"
 
 function Modal() {
     const [erro, setErro] = useState("")
