@@ -1,4 +1,4 @@
-function gerarCodigo(estado) {
+function useGerarCodigo(estado) {
     const { 
         mensagem, 
         corTexto, 
@@ -21,4 +21,4 @@ function gerarCodigo(estado) {
     }
 }
 
-export default gerarCodigo
+export default useGerarCodigo
