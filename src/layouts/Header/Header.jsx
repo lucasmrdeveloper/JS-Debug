@@ -17,17 +17,20 @@ const links = [
 
 const Header = () => {
     return (
-        <header className="header-box">
-            <NavLink to="/" className="logo">
+        <header className="header">
+            <NavLink to="/" className="header__logo">
                 <h1>JS Debug</h1>
                 <p>Gerador de console.logs personalizados</p>
             </NavLink>
           
             <nav>
-                <ul className="header-menu-lista">
+                <ul className="header__menu">
                     {links.map(({nome, icone, caminho}) =>
                         <li key={nome}>
-                            <NavLink to={caminho}>
+                            <NavLink 
+                                to={caminho}
+                                className="header__menu-link"
+                            >
                                 <img src={icone} />
 
                                 {nome}
