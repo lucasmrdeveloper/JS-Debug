@@ -2,9 +2,6 @@
 import { useContext, useState } from "react"
 import { PresetContext } from "../../context/PresetContext"
 
-// Componente
-import PreviewConteudo from "../../features/preview/components/PreviewConteudo";
-
 // Lógica Remover
 import removerPreset from "../../hooks/removerPreset";
 import copiarCodigo from "../../hooks/copiarCodigo";
@@ -28,9 +25,7 @@ function PresetSalvo() {
                             <h2 className="preset-salvo-nome">{item.nomePreset}</h2>
 
                             <div className="preset-conteudo-box">
-                                <PreviewConteudo 
-                                     {...item}
-                                /> 
+                                
                             </div>
 
                             <div className="preset-salvo-btns">
