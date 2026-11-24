@@ -1,14 +1,13 @@
-import { useHandleCopiar } from "../hook/useHandleCopiar"
 import { useGerarCodigo } from "../../../shared/hooks/useGerarCodigo"
+import { useHandleCopiar } from "../hook/useHandleCopiar"
 
 import "./CodigoGerado.css"
-
 
 const CodigoGerado = () => {
     const codigo = useGerarCodigo()
     const { handleCopiar, copiado } = useHandleCopiar()
 
-    return(
+    return (
         <div className="codigo">
             <h2 className="codigo-titulo">Código Gerado</h2>
             <p className="codigo-texto">Copie este trecho e cole no seu código Javascript.</p>
