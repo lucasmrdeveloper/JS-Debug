@@ -1,4 +1,9 @@
+import { useContext } from "react"
+import { EstadoContext } from "../../context/EstadoContext"
+
 function useGerarCodigo(estado) {
+    const { estado } = useContext(EstadoContext)
+
     const { 
         mensagem, 
         corTexto, 
@@ -10,13 +15,11 @@ function useGerarCodigo(estado) {
         borda,
     } = estado
 
-    
     const codigoGerado = `console.log(
     "%c${mensagem}",
     "color: ${corTexto};  background-color: ${corFundo};  font-size: ${tamanhoFonte};  font-weight: ${pesoFonte};  padding: ${espacamento};  border-radius: ${raioBorda}; border: ${borda};" \n)`
     
-
-    return{
+    return {
         codigoGerado
     }
 }
