@@ -5,12 +5,12 @@ import Modal from "../../features/presets/components/Modal"
 import "./ColunaDireita.css"
 
 const ColunaDireita = () => {
-    return(
-        <div className="coluna-direita">
+    return (
+        <aside className="coluna-direita">
             <Preview />
             <CodigoGerado />
             <Modal />
-        </div>
+        </aside>
     )   
 }
 
