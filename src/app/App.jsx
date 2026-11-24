@@ -5,7 +5,7 @@ import { useContext } from 'react'
 import Header from '../components/Header/Header'
 import Presets from '../features/presets/components/Presets'
 import Inputs from '../features/editor/components/Inputs'
-import ColunaDireitaBox from '../components/Colunas/ColunaDireita/ColunaDireitaBox'
+import ColunaDireita from '../components/Colunas/ColunaDireita/ColunaDireita'
 
 import Notificacao from '../components/Notificacao/Notificacao'
 
@@ -30,7 +30,7 @@ function App() {
 
       <div className="colunas">
           <Inputs />
-          <ColunaDireitaBox />
+          <ColunaDireita />
       </div>
     </>
   )
