@@ -1,13 +1,7 @@
-// Hook
-import { useContext } from "react"
-
-// Components
 import Header from "../../../layouts/Header/Header"
 import PresetSalvo from "../components/PresetSalvo"
 
-// CSS
 import "./MeusPresets.css"
-import "../../styles/layout/responsivo.css"
 
 
 function MeusPresets() {
