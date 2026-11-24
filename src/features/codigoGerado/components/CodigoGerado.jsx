@@ -1,9 +1,6 @@
 // Hook
 import { useContext, useState } from "react";
 
-// contexto
-import { EstadoContext } from "../../../context/EstadoContext";
-
 // Lógica
 import gerarCodigo from "../../../shared/hooks/useGerarCodigo";
 import copiarCodigo from "../../../hooks/copiarCodigo";
@@ -14,7 +11,6 @@ import "./CodigoGerado.css"
 
 function CodigoGerado() {
     // Contexto
-    const { estado } = useContext(EstadoContext)
     
     // Recebe código gerado
     const dados = gerarCodigo(estado)
