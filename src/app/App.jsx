@@ -2,12 +2,12 @@
 import { useContext } from 'react'
 
 // Componentes
-import Header from '../components/Header/Header'
+import Header from '../layouts/Header/Header'
 import Presets from '../features/presets/components/Presets'
 import Inputs from '../features/editor/components/Inputs'
-import ColunaDireita from '../components/Colunas/ColunaDireita/ColunaDireita'
+import ColunaDireita from '../layouts/ColunaDireita/ColunaDireita'
 
-import Notificacao from '../components/Notificacao/Notificacao'
+import Notificacao from '../layouts/Notificacao/Notificacao'
 
 // CSS
 import "./styles/reset.css"

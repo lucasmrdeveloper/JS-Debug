@@ -10,8 +10,8 @@ import { useState } from 'react'
 
 // Componetes
 import App from './App.jsx'
-import MeusPresets from '../components/MeusPresets/MeusPresets.jsx'
-import Notificacao from '../components/Notificacao/Notificacao.jsx'
+import MeusPresets from '../features/presets/pages/MeusPresets.jsx'
+import Notificacao from '../layouts/Notificacao/Notificacao.jsx'
 
 // Contextos
 import { EstadoContext } from '../context/EstadoContext.jsx'
