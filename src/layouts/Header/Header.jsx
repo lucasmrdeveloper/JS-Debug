@@ -15,7 +15,7 @@ const links = [
     }
 ]
 
-function Header() {
+const Header = () => {
     return(
         <header className="header-box">
             <div>
