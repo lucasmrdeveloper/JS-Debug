@@ -4,7 +4,7 @@ import { PresetContext } from "../../context/PresetContext"
 
 // Lógica Remover
 import removerPreset from "../../hooks/removerPreset";
-import copiarCodigo from "../../hooks/copiarCodigo";
+import copiarCodigo from "../../shared/utils/copiarCodigo";
 
 
 function PresetSalvo() {

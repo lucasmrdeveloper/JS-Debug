@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import useGerarCodigo from "../../../shared/hooks/useGerarCodigo"
-import copiarCodigo from "../../../hooks/copiarCodigo";
+import copiarCodigo from "../../../shared/utils/copiarCodigo";
 
 import "./CodigoGerado.css"
 
