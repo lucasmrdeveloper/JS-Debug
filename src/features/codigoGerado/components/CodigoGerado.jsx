@@ -1,25 +1,16 @@
-// Hook
-import { useContext, useState } from "react";
+import { useState } from "react";
 
-// Lógica
 import useGerarCodigo from "../../../shared/hooks/useGerarCodigo"
 import copiarCodigo from "../../../hooks/copiarCodigo";
 
-// CSS
 import "./CodigoGerado.css"
 
 
 function CodigoGerado() {
-    // Contexto
-    
-    // Recebe código gerado
     const dados = useGerarCodigo()
 
-
-    // Cria estado para copiar
     const [copiado, setCopiado] = useState(false)
     
-    // Pega função copiar()
     const { copiar } = copiarCodigo()
     
     return(
