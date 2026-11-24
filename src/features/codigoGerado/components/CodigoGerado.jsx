@@ -5,7 +5,7 @@ import { useContext, useState } from "react";
 import { EstadoContext } from "../../../context/EstadoContext";
 
 // Lógica
-import gerarCodigo from "../../../hooks/gerarCodigo";
+import gerarCodigo from "../../../shared/hooks/useGerarCodigo";
 import copiarCodigo from "../../../hooks/copiarCodigo";
 
 // CSS

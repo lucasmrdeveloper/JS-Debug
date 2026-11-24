@@ -8,7 +8,7 @@ import { PresetContext } from "../context/PresetContext"
 // Lógica
 import modalController from "./modalController";
 import notificacao from "./notificacao";
-import gerarCodigo from "./gerarCodigo";
+import gerarCodigo from "../shared/hooks/useGerarCodigo";
 
 
 function salvarPreset() {
