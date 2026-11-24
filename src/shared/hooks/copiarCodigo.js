@@ -1,5 +1,8 @@
 function copiarCodigo() {
     function copiar(item, setCopy, index) {
+        console.log("item", item)
+        console.log("index", index)
+
         if (index != undefined) {
             setCopy(index)
         }
