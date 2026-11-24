@@ -6,7 +6,7 @@ import Header from "../../../layouts/Header/Header"
 import PresetSalvo from "../components/PresetSalvo"
 
 // CSS
-import "../../styles/layout/meus-presets.css"
+import "./MeusPresets.css"
 import "../../styles/layout/responsivo.css"
 
 
