@@ -13,7 +13,8 @@ function CodigoGerado() {
     // Contexto
     
     // Recebe código gerado
-    const dados = gerarCodigo(estado)
+    const dados = useGerarCodigo()
+
 
     // Cria estado para copiar
     const [copiado, setCopiado] = useState(false)
