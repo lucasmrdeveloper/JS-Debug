@@ -1,7 +1,7 @@
 // Componentes
 import Preview from "../../../features/preview/components/Preview"
 import CodigoGerado from "../../../features/codigoGerado/components/CodigoGerado"
-import Modal from "./Modal"
+import Modal from "../../../features/presets/components/Modal"
 
 
 function ColunaDireitaBox() {
