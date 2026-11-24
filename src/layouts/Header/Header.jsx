@@ -1,4 +1,4 @@
-import { Link } from "react-router"
+import { NavLink } from "react-router"
 
 import "./Header.css"
 
@@ -19,21 +19,21 @@ const Header = () => {
     return(
         <header className="header-box">
             <div>
-                <Link to="/" className="logo">
+                <NavLink to="/" className="logo">
                     <h1>JS Debug</h1>
                     <p>Gerador de console.logs personalizados</p>
-                </Link>
+                </NavLink>
             </div>
 
             <nav>
                 <ul className="header-menu-lista">
                     {links.map(link =>
                         <li>
-                            <Link to={link.caminho}>
+                            <NavLink to={link.caminho}>
                                 <img src={link.icone} />
 
                                 {link.nome}
-                            </Link>
+                            </NavLink>
                         </li>
                     )}
                 </ul>
