@@ -9,7 +9,7 @@ import gerarCodigo from "../../../hooks/gerarCodigo";
 import copiarCodigo from "../../../hooks/copiarCodigo";
 
 // CSS
-import "../../../styles/layout/codigo-gerado.css"
+import "./CodigoGerado.css"
 
 
 function CodigoGerado() {
