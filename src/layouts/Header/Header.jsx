@@ -25,12 +25,12 @@ const Header = () => {
           
             <nav>
                 <ul className="header-menu-lista">
-                    {links.map(link =>
+                    {links.map(({nome, icone, caminho}) =>
                         <li>
-                            <NavLink to={link.caminho}>
-                                <img src={link.icone} />
+                            <NavLink to={caminho}>
+                                <img src={icone} />
 
-                                {link.nome}
+                                {nome}
                             </NavLink>
                         </li>
                     )}
