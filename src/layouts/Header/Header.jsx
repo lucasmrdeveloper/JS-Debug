@@ -16,15 +16,13 @@ const links = [
 ]
 
 const Header = () => {
-    return(
+    return (
         <header className="header-box">
-            <div>
-                <NavLink to="/" className="logo">
-                    <h1>JS Debug</h1>
-                    <p>Gerador de console.logs personalizados</p>
-                </NavLink>
-            </div>
-
+            <NavLink to="/" className="logo">
+                <h1>JS Debug</h1>
+                <p>Gerador de console.logs personalizados</p>
+            </NavLink>
+          
             <nav>
                 <ul className="header-menu-lista">
                     {links.map(link =>
