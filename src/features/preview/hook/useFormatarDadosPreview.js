@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import { EstadoContext } from "../../../context/EstadoContext"
 
-function useFormatarDadosPreview() {
+const useFormatarDadosPreview = () => {
     const { estado } = useContext(EstadoContext)
 
     if (estado) {
