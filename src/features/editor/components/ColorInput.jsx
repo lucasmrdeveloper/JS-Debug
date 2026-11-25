@@ -11,14 +11,14 @@ const ColorInput = ({ label, id, value }) => {
                 <input 
                     type="color"  
                     value={value}
-                    onChange={(e) => handleChange(e)}
+                    onChange={handleChange}
                 />
                 
                 <input 
                     type="text" 
                     id={id}
                     value={value} 
-                    onChange={(e) => handleChange(e)}
+                    onChange={handleChange}
                 />
             </div>
         </div>
