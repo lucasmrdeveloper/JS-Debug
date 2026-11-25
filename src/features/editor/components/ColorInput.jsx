@@ -1,6 +1,6 @@
 import { useAtualizarEstado } from "../../../shared/useAtualizarEstado"
 
-const ColorInput = ( {label, id, value, data} ) => {
+const ColorInput = ( { label, id, value } ) => {
     const handleChange = useAtualizarEstado()
 
     return(
@@ -11,7 +11,6 @@ const ColorInput = ( {label, id, value, data} ) => {
                 <input 
                     type="color"  
                     value={value}
-                    data-input={data} 
                     onChange={(e) => handleChange(e)}
                 />
                 
@@ -19,7 +18,6 @@ const ColorInput = ( {label, id, value, data} ) => {
                     type="text" 
                     id={id}
                     value={value} 
-                    data-input={data} 
                     onChange={(e) => handleChange(e)}
                 />
             </div>
