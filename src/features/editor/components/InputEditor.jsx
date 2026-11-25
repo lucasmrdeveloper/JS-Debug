@@ -11,7 +11,7 @@ const InputEditor = ({ label, id, value }) => {
                 type="text"
                 id={id}
                 value={value}
-                onChange={(e) => handleChange(e)}
+                onChange={handleChange}
             />
         </div>
     )
