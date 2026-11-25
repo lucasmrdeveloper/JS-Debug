@@ -1,4 +1,4 @@
-import { useAtualizarEstado } from "../../../shared/useAtualizarEstado"
+import { useAtualizarEstado } from "../hooks/useAtualizarEstado"
 
 const TextoInput = ({ label, id, value }) => {
     const handleChange = useAtualizarEstado()
