@@ -9,32 +9,29 @@ const CodigoGerado = () => {
 
     return (
         <div className="codigo">
-            <h2 className="codigo-titulo">Código Gerado</h2>
-            <p className="codigo-texto">Copie este trecho e cole no seu código Javascript.</p>
+            <h2>Código Gerado</h2>
+            <p>Copie este trecho e cole no seu código Javascript.</p>
 
-            <div className="codigo-box">
+            <div className="codigo__painel">
                 <button 
-                    className="codigo-copiar" 
+                    className="codigo__botao-copiar" 
                     onClick={() => handleCopiar(codigo)}
                 >
                     <img 
-                        className="codigo-copiar-img" 
                         src="/copiar.svg" 
                         alt="ícone de copiar código" 
                     />
 
-                    <span className="codigo-copiar-texto"> 
-                        {copiado ? "Copiado!" : "Copiar"} 
-                    </span>
+                    <span>{copiado ? "Copiado!" : "Copiar"}</span>
                 </button>
 
                 {erro && (
-                    <p className="codigo-copiar-texto"> 
+                    <p className="codigo__erro"> 
                         Não foi possível copiar. Selecione o código e copie manualmente.
                     </p> 
                 )}
 
-                <code className="codigo-gerado">
+                <code className="codigo__gerado">
                     {codigo}
                 </code>
             </div>

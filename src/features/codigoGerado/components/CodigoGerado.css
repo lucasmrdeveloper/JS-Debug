@@ -1,49 +1,37 @@
-.codigo-box{
+.codigo__painel {
     background-color: #0A0B10;
     padding: 20px;
     border-radius: 10px;
-    position: relative;
     overflow: auto;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    filter: drop-shadow(2px 4px 6px #e5e5e5);
+    box-shadow: 2px 4px 12px #e5e5e5;
 }
 
-.codigo-box::-webkit-scrollbar,
-.codigo-box::-webkit-scrollbar-track  {
+.codigo__painel::-webkit-scrollbar,
+.codigo__painel::-webkit-scrollbar-track {
     background: #fff;
     border-radius: 0 0 10px 10px;
 }
 
-.codigo-box::-webkit-scrollbar-thumb {
+.codigo__painel::-webkit-scrollbar-thumb {
     background: #c5c7c9;
     border-radius: 0 0 10px 10px;
     border: 1px solid #dedee3;
 }   
 
-.codigo-copiar{
+.codigo__botao-copiar {
     position: sticky;
     left: 85%;
-    margin-right: 10px;
     margin-left: auto;
     cursor: pointer;
     display: flex;
     align-items: center;
     gap: 5px;
-    z-index: 100;
 }
 
-.codigo-copiar-img{
-    width: 25px;
-    fill: #fff;
-}
-
-.codigo-copiar-texto{
-    color: #fff;
-}
-
-.codigo-gerado{
+.codigo__gerado {
     color: #fff;
     line-height: 25px;
     display: flex;
@@ -52,11 +40,7 @@
     white-space: pre;
 }
 
-.codigo-gerado::after{
+.codigo__gerado::after {
     content: "";
     padding-right: 20px;
-}
-
-.codigo-gerado-console{
-    color: #ffebbf;
 }
