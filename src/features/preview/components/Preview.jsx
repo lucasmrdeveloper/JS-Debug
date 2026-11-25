@@ -1,19 +1,15 @@
-// Hook
 import { useContext } from "react";
+import useFormatarDadosPreview from "../hook/useFormatarDadosPreview"
 
-// Contexto
-import { EstadoContext } from "../../../context/EstadoContext";
-import useFormatarDadosPreview from "../hook/useFormatarDadosPreview";
+import { EstadoContext } from "../../../context/EstadoContext"
 
-// CSS
 import "./styles/Preview.css"
-
 
 function Preview() {
     const { estado } = useContext(EstadoContext)
     const preview = useFormatarDadosPreview(estado)
 
-    return(
+    return (
        <div className="preview">
             <h2 className="preview-titulo">Preview do Console</h2>
             <p className="preview-texto">Confira como irá ficar no DevTools.</p>
