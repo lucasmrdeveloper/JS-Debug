@@ -6,8 +6,8 @@ const ConsolePreview  = () => {
     const preview = useFormatarDadosPreview()
     
     return (
-        <div className="preview__console" style={preview.box}>
-            <p style={preview.textos}>{preview.mensagem}</p>
+        <div className="preview__console" style={preview.styles.conteudo}>
+            <p style={preview.styles.texto}>{preview.mensagem}</p>
         </div> 
     )
 }
