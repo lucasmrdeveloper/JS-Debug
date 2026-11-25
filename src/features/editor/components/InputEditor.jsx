@@ -4,9 +4,7 @@ const InputEditor = ({ label, id, value }) => {
     const handleChange = useAtualizarEstado()
 
     return (
-        <div 
-            className="personalizar-item" 
-        >
+        <div className="personalizar-item">
             <label htmlFor={id}>{label}</label>
             
             <input 
