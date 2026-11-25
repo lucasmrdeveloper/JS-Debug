@@ -5,7 +5,7 @@ import { EstadoContext } from "../../../context/EstadoContext"
 
 import "./styles/Preview.css"
 
-function Preview() {
+const Preview = () => {
     const { estado } = useContext(EstadoContext)
     const preview = useFormatarDadosPreview(estado)
 
