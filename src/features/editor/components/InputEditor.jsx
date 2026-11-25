@@ -4,7 +4,9 @@ const InputEditor = ({ label, id, value }) => {
     const handleChange = useAtualizarEstado()
 
     return (
-        <div className="personalizar-item" style={{width: id === "espacamento" || id === "mensagem" ? "100%" : "auto"}}>
+        <div 
+            className="personalizar-item" 
+        >
             <label htmlFor={id}>{label}</label>
             
             <input 
