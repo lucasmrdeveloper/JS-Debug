@@ -9,7 +9,7 @@ import InputEditor from "./InputEditor"
 import "../../../styles/layout/personalizar.css"
 
 const Inputs = () => {
-    const { estado, setEstado } = useContext(EstadoContext)
+    const { estado } = useContext(EstadoContext)
     
     return(
         <div className="coluna-esquerda">
