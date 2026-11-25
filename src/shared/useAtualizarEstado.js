@@ -5,12 +5,12 @@ export const useAtualizarEstado = () => {
     const { setEstado } = useContext(EstadoContext)
     
     return (e) => {
-        const { id, value } = e.target
-        const campo = id
+        const campo = e.target.id
+        const valor =  e.target.value
 
         setEstado(anterior => ({
             ...anterior,
-            [campo]: value
+            [campo]: valor
         })) 
     }
 }
