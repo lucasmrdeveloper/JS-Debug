@@ -1,6 +1,6 @@
 import { useAtualizarEstado } from "../../../shared/useAtualizarEstado"
 
-const InputEditor = ({ label, id, value }) => {
+const TextoInput = ({ label, id, value }) => {
     const handleChange = useAtualizarEstado()
 
     return (
@@ -17,4 +17,4 @@ const InputEditor = ({ label, id, value }) => {
     )
 }
 
-export default InputEditor
+export default TextoInput
