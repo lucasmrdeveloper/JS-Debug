@@ -23,7 +23,7 @@ function Inputs() {
                 setEstado={setEstado}
             />
         
-            <SectionBox titulo="Texto">
+            <SectionBox>
                 <ColorInput 
                     label = "Cor do Texto"
                     id = "corTexto"
