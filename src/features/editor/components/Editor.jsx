@@ -4,7 +4,7 @@ import { EstadoContext } from "../../../context/EstadoContext"
 
 import TextoInput from "./TextoInput"
 import SectionBox from "./SectionBox"
-import ColorInput from "./ColorInput"
+import CorInput from "./CorInput"
 
 import "../styles/Editor.css"
 
@@ -23,13 +23,13 @@ const Editor = () => {
             />
         
             <SectionBox>
-                <ColorInput 
+                <CorInput 
                     label="Cor do Texto"
                     id="corTexto"
                     value={estado.corTexto}
                 />
 
-                <ColorInput 
+                <CorInput 
                     label="Cor do Fundo"
                     id="corFundo"
                     value={estado.corFundo}

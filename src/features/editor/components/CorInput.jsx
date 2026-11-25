@@ -1,6 +1,6 @@
 import { useAtualizarEstado } from "../../../shared/useAtualizarEstado"
 
-const ColorInput = ({ label, id, value }) => {
+const CorInput = ({ label, id, value }) => {
     const handleChange = useAtualizarEstado()
 
     return (
@@ -25,4 +25,4 @@ const ColorInput = ({ label, id, value }) => {
     )
 }
 
-export default ColorInput
+export default CorInput
