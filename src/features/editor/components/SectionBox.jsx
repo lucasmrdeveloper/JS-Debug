@@ -1,5 +1,5 @@
 const SectionBox = ({ children }) => {
-    return(
+    return (
         <div className="personalizar-box">
             <div className="personalizar-itens">
                 {children}

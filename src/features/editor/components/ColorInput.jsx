@@ -1,9 +1,9 @@
 import { useAtualizarEstado } from "../../../shared/useAtualizarEstado"
 
-const ColorInput = ( { label, id, value } ) => {
+const ColorInput = ({ label, id, value }) => {
     const handleChange = useAtualizarEstado()
 
-    return(
+    return (
         <div className="personalizar-item">
             <label htmlFor={id}>{label}</label>
             

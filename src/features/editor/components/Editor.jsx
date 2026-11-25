@@ -11,28 +11,28 @@ import "../../../styles/layout/personalizar.css"
 const Editor = () => {
     const { estado } = useContext(EstadoContext)
     
-    return(
+    return (
         <div className="coluna-esquerda">
 
             <h2 className="personalizar-titulo">Personalizar Estilo</h2>
 
             <InputEditor 
-                label = "Mensagem"
-                id = "mensagem"
-                value = {estado.mensagem}
+                label="Mensagem"
+                id="mensagem"
+                value={estado.mensagem}
             />
         
             <SectionBox>
                 <ColorInput 
-                    label = "Cor do Texto"
-                    id = "corTexto"
+                    label="Cor do Texto"
+                    id="corTexto"
                     value={estado.corTexto}
                 />
 
                 <ColorInput 
-                    label = "Cor do Fundo"
-                    id = "corFundo"
-                    value = {estado.corFundo}
+                    label="Cor do Fundo"
+                    id="corFundo"
+                    value={estado.corFundo}
                 />
             </SectionBox>
 
