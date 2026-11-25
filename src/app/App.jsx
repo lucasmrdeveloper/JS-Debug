@@ -4,7 +4,7 @@ import { useContext } from 'react'
 // Componentes
 import Header from '../layouts/Header/Header'
 import Presets from '../features/presets/components/Presets'
-import Inputs from '../features/editor/components/Inputs'
+import Editor from '../features/editor/components/Editor'
 import ColunaDireita from '../layouts/ColunaDireita/ColunaDireita'
 
 import Notificacao from '../layouts/Notificacao/Notificacao'
@@ -29,7 +29,7 @@ function App() {
       <Presets />
 
       <div className="colunas">
-          <Inputs />
+          <Editor />
           <ColunaDireita />
       </div>
     </>

@@ -8,7 +8,7 @@ import InputEditor from "./InputEditor"
 
 import "../../../styles/layout/personalizar.css"
 
-const Inputs = () => {
+const Editor = () => {
     const { estado } = useContext(EstadoContext)
     
     return(
@@ -73,4 +73,4 @@ const Inputs = () => {
     )
 }
 
-export default Inputs
+export default Editor
