@@ -20,7 +20,6 @@ const Inputs = () => {
                 label = "Mensagem"
                 id = "mensagem"
                 value = {estado.mensagem}
-                setEstado={setEstado}
             />
         
             <SectionBox>
@@ -42,14 +41,12 @@ const Inputs = () => {
                     label="Tamanho da fonte"
                     id="tamanhoFonte"
                     value={estado.tamanhoFonte}
-                    setEstado={setEstado}
                 />
 
                 <InputEditor 
                     label="Peso da fonte"
                     id="pesoFonte"
                     value={estado.pesoFonte}
-                    setEstado={setEstado}
                 />
             </SectionBox>
 
@@ -57,7 +54,6 @@ const Inputs = () => {
                 label="Espaçamento"
                 id="espacamento"
                 value={estado.espacamento}
-                setEstado={setEstado}
             />
       
             <SectionBox>
@@ -65,14 +61,12 @@ const Inputs = () => {
                     label="Raio da Borda"
                     id="raioBorda"
                     value={estado.raioBorda}
-                    setEstado={setEstado}
                 />
 
                 <InputEditor 
                     label="Borda"
                     id="borda"
                     value={estado.borda}
-                    setEstado={setEstado}
                 />
             </SectionBox>
         </div>
