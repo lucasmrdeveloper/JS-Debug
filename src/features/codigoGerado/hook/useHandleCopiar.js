@@ -5,7 +5,7 @@ export const useHandleCopiar = () => {
     const [copiado, setCopiado] = useState(false)
     const [erro, setErro] = useState(false)
 
-    async function handleCopiar(codigoGerado) {
+    const handleCopiar = async (codigoGerado) => {
         setCopiado(false)
         setErro(false)
         
