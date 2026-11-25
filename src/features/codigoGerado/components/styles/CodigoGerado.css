@@ -31,6 +31,10 @@
     gap: 5px;
 }
 
+.codigo__erro {
+    color: #fff;
+}
+
 .codigo__gerado {
     color: #fff;
     line-height: 25px;

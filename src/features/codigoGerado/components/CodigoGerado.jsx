@@ -25,15 +25,15 @@ const CodigoGerado = () => {
                     <span>{copiado ? "Copiado!" : "Copiar"}</span>
                 </button>
 
+                <code className="codigo__gerado">
+                    {codigo}
+                </code>
+                
                 {erro && (
                     <p className="codigo__erro"> 
                         Não foi possível copiar. Selecione o código e copie manualmente.
                     </p> 
                 )}
-
-                <code className="codigo__gerado">
-                    {codigo}
-                </code>
             </div>
         </div>
     )
