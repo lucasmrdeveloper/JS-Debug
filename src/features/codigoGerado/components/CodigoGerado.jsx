@@ -1,7 +1,7 @@
 import { useGerarCodigo } from "../../../shared/hooks/useGerarCodigo"
 import { useHandleCopiar } from "../hook/useHandleCopiar"
 
-import "./styles/CodigoGerado.css"
+import "../styles/CodigoGerado.css"
 
 const CodigoGerado = () => {
     const codigo = useGerarCodigo()
