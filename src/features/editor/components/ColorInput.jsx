@@ -1,6 +1,6 @@
 import { useAtualizarEstado } from "../../../shared/useAtualizarEstado"
 
-function ColorInput( {label, id, value, data} ) {
+const ColorInput = ( {label, id, value, data} ) => {
     const handleChange = useAtualizarEstado()
 
     return(

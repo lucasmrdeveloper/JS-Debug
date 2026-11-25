@@ -8,7 +8,7 @@ import InputEditor from "./InputEditor"
 
 import "../../../styles/layout/personalizar.css"
 
-function Inputs() {
+const Inputs = () => {
     const { estado, setEstado } = useContext(EstadoContext)
     
     return(
