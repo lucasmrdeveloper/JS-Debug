@@ -1,10 +1,8 @@
-import { useFormatarDadosPreview } from "../hook/useFormatarDadosPreview"
+import ConsolePreview from "./PreviewConsole"
 
 import "../styles/Preview.css"
 
 const Preview = () => {
-    const preview = useFormatarDadosPreview()
-
     return (
        <div className="preview">
             <h2 className="preview-titulo">Preview do Console</h2>
@@ -13,9 +11,7 @@ const Preview = () => {
             <div className="preview-itens">
                 <div className="preview-janela">Console</div>
 
-                <div className="preview-conteudo" style={preview.box}>
-                    <p className="preview-conteudo-descricao" style={preview.textos}>{preview.mensagem}</p>
-                </div> 
+                <ConsolePreview />
             </div>
         </div> 
     )
