@@ -1,4 +1,4 @@
-const SectionBox = ({ children }) => {
+const BoxInputs = ({ children }) => {
     return (
         <div className="personalizar-box">
             <div className="personalizar-itens">
@@ -8,4 +8,4 @@ const SectionBox = ({ children }) => {
     )
 }
 
-export default SectionBox
+export default BoxInputs

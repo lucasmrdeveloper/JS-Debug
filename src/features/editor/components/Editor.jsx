@@ -3,8 +3,8 @@ import { useContext } from "react"
 import { EstadoContext } from "../../../context/EstadoContext"
 
 import TextoInput from "./TextoInput"
-import SectionBox from "./SectionBox"
 import CorInput from "./CorInput"
+import BoxInputs from "./BoxInputs"
 
 import "../styles/Editor.css"
 
@@ -13,7 +13,6 @@ const Editor = () => {
     
     return (
         <div className="coluna-esquerda">
-
             <h2 className="personalizar-titulo">Personalizar Estilo</h2>
 
             <TextoInput
@@ -22,7 +21,7 @@ const Editor = () => {
                 value={estado.mensagem}
             />
         
-            <SectionBox>
+            <BoxInputs>
                 <CorInput 
                     label="Cor do Texto"
                     id="corTexto"
@@ -34,9 +33,9 @@ const Editor = () => {
                     id="corFundo"
                     value={estado.corFundo}
                 />
-            </SectionBox>
+            </BoxInputs>
 
-            <SectionBox>
+            <BoxInputs>
                 <TextoInput
                     label="Tamanho da fonte"
                     id="tamanhoFonte"
@@ -48,7 +47,7 @@ const Editor = () => {
                     id="pesoFonte"
                     value={estado.pesoFonte}
                 />
-            </SectionBox>
+            </BoxInputs>
 
             <TextoInput
                 label="Espaçamento"
@@ -56,7 +55,7 @@ const Editor = () => {
                 value={estado.espacamento}
             />
       
-            <SectionBox>
+            <BoxInputs>
                 <TextoInput
                     label="Raio da Borda"
                     id="raioBorda"
@@ -68,7 +67,7 @@ const Editor = () => {
                     id="borda"
                     value={estado.borda}
                 />
-            </SectionBox>
+            </BoxInputs>
         </div>
     )
 }
