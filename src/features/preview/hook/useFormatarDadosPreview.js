@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import { EstadoContext } from "../../../context/EstadoContext"
 
-const useFormatarDadosPreview = () => {
+export const useFormatarDadosPreview = () => {
     const { estado } = useContext(EstadoContext)
 
     if (estado) {
@@ -24,5 +24,3 @@ const useFormatarDadosPreview = () => {
         }
     }
 }
-
-export default useFormatarDadosPreview
