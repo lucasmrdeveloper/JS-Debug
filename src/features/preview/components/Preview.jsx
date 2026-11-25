@@ -3,7 +3,7 @@ import useFormatarDadosPreview from "../hook/useFormatarDadosPreview"
 
 import { EstadoContext } from "../../../context/EstadoContext"
 
-import "./styles/Preview.css"
+import "../styles/Preview.css"
 
 const Preview = () => {
     const { estado } = useContext(EstadoContext)
