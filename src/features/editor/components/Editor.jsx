@@ -6,7 +6,7 @@ import SectionBox from "./SectionBox"
 import ColorInput from "./ColorInput"
 import InputEditor from "./InputEditor"
 
-import "../../../styles/layout/personalizar.css"
+import "../styles/Editor.css"
 
 const Editor = () => {
     const { estado } = useContext(EstadoContext)
