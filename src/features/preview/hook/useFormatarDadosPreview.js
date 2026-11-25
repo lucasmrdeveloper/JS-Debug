@@ -3,11 +3,11 @@ import { EstadoContext } from "../../../context/EstadoContext"
 
 export const useFormatarDadosPreview = () => {
     const { estado } = useContext(EstadoContext)
+    console.log("estado", estado)
 
     if (estado) {
         return {
             mensagem: estado.mensagem,
-            id: estado.id,
 
             box: {
                 padding: estado.espacamento,
