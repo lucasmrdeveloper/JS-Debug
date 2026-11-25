@@ -1,13 +1,9 @@
-import { useContext } from "react";
 import useFormatarDadosPreview from "../hook/useFormatarDadosPreview"
-
-import { EstadoContext } from "../../../context/EstadoContext"
 
 import "../styles/Preview.css"
 
 const Preview = () => {
-    const { estado } = useContext(EstadoContext)
-    const preview = useFormatarDadosPreview(estado)
+    const preview = useFormatarDadosPreview()
 
     return (
        <div className="preview">
