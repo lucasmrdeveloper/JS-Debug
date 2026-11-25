@@ -5,7 +5,7 @@ import "./CodigoGerado.css"
 
 const CodigoGerado = () => {
     const codigo = useGerarCodigo()
-    const { handleCopiar, copiado } = useHandleCopiar()
+    const { handleCopiar, copiado, erro } = useHandleCopiar()
 
     return (
         <div className="codigo">
@@ -23,6 +23,12 @@ const CodigoGerado = () => {
                         {copiado ? "Copiado!" : "Copiar"} 
                     </span>
                 </button>
+
+                {erro && (
+                    <p className="codigo-copiar-texto"> 
+                        Não foi possível copiar. Selecione o código e copie manualmente.
+                    </p> 
+                )}
 
                 <code className="codigo-gerado">
                     {codigo}
