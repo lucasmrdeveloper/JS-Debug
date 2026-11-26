@@ -1,4 +1,4 @@
-import { useFormatarDadosPreview } from "../hook/useFormatarDadosPreview"
+import { useFormatarDadosPreview } from "../hooks/useFormatarDadosPreview"
 
 import "../styles/ConsolePreview.css"
 
