@@ -1,4 +1,4 @@
-import ConsolePreview from "./ConsolePreview"
+import ConsolePreview from "../../../shared/components/ConsolePreview"
 
 import "../styles/Preview.css"
 
