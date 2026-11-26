@@ -1,19 +1,13 @@
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import { PresetContext } from "../../../context/PresetContext"
 
 import BotaoCopiar from "../../../shared/components/BotãoCopiar";
 
 import removerPreset from "../../../hooks/removerPreset";
-import { useHandleCopiar } from "../../../shared/hooks/useHandleCopiar";
-
 
 const PresetSalvo = () => {
     const { preset, setPreset } = useContext(PresetContext)
-    const { handleCopiar, copiado, erro } = useHandleCopiar()
-    
     const { remover } = removerPreset()
-
-   const [copy, setCopy] = useState(false)
 
     return (
         <div className="presets-salvos-box">
