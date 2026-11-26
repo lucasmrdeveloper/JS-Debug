@@ -1,0 +1,9 @@
+.botao__copiar {
+    position: sticky;
+    left: 85%;
+    margin-left: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

@@ -21,16 +21,6 @@
     border: 1px solid #dedee3;
 }   
 
-.codigo__botao-copiar {
-    position: sticky;
-    left: 85%;
-    margin-left: auto;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
 .codigo__erro {
     color: #fff;
 }

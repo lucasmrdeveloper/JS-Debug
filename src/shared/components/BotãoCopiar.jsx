@@ -1,11 +1,13 @@
 import { useHandleCopiar } from "../hooks/useHandleCopiar"
 
+import "../styles/BotaoCopiar.css"
+
 const BotaoCopiar = () => {
     const { handleCopiar, copiado } = useHandleCopiar()
 
     return (
         <button 
-            className="codigo__botao-copiar" 
+            className="botao__copiar" 
             onClick={() => handleCopiar(codigo)}
         >
             <img 
