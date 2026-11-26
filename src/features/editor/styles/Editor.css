@@ -13,13 +13,12 @@
     gap: 20px;
 }
 
-/* ===== Color Inputs ===== */
-.personalizar-cores-box{
+.editor-cor__box{
     display: flex;
     gap: 5px;
 }
 
-.personalizar-cores-box input[type="color"] {
+.editor-cor__box input[type="color"] {
     -webkit-appearance: none;
     appearance: none;
     padding: 0;
@@ -29,11 +28,11 @@
     cursor: pointer;
 }
 
-.personalizar-cores-box input[type="color"]::-webkit-color-swatch-wrapper {
+.editor-cor__box input[type="color"]::-webkit-color-swatch-wrapper {
     padding: 0;
 }
 
-.personalizar-cores-box input[type="color"]::-webkit-color-swatch {
+.editor-cor__box input[type="color"]::-webkit-color-swatch {
     border: 5px solid #e4e6ed;
     border-radius: 10px;
 }

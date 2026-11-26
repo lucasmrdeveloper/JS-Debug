@@ -7,7 +7,7 @@ const CorInput = ({ label, id, value }) => {
         <div>
             <label htmlFor={id}>{label}</label>
             
-            <div className="personalizar-cores-box">
+            <div className="editor-cor__box">
                 <input 
                     type="color"  
                     value={value}
