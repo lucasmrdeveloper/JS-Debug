@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { copiarCodigo } from "../../../shared/utils/copiarCodigo"
+import { copiarCodigo } from "../utils/copiarCodigo"
 
 export const useHandleCopiar = () => {
     const [copiado, setCopiado] = useState(false)
