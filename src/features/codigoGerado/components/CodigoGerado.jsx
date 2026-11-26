@@ -15,7 +15,7 @@ const CodigoGerado = () => {
             <p>Copie este trecho e cole no seu código Javascript.</p>
 
             <div className="codigo__painel">
-                <BotaoCopiar/>
+                <BotaoCopiar codigo={codigo}/>
 
                 <code className="codigo__gerado">
                     {codigo}

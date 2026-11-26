@@ -2,7 +2,7 @@ import { useHandleCopiar } from "../hooks/useHandleCopiar"
 
 import "../styles/BotaoCopiar.css"
 
-const BotaoCopiar = () => {
+const BotaoCopiar = ({ codigo }) => {
     const { handleCopiar, copiado } = useHandleCopiar()
 
     return (
