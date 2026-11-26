@@ -7,7 +7,7 @@ import "../styles/CodigoGerado.css"
 
 const CodigoGerado = () => {
     const codigo = useGerarCodigo()
-    const { handleCopiar, copiado, erro } = useHandleCopiar()
+    const { erro } = useHandleCopiar()
 
     return (
         <div className="codigo">
@@ -15,17 +15,7 @@ const CodigoGerado = () => {
             <p>Copie este trecho e cole no seu código Javascript.</p>
 
             <div className="codigo__painel">
-                <button 
-                    className="codigo__botao-copiar" 
-                    onClick={() => handleCopiar(codigo)}
-                >
-                    <img 
-                        src="/copiar.svg" 
-                        alt="ícone de copiar código" 
-                    />
-
-                    <BotaoCopiar copiado={copiado}/>
-                </button>
+                <BotaoCopiar/>
 
                 <code className="codigo__gerado">
                     {codigo}
