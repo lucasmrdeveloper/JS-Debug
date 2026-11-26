@@ -1,9 +1,9 @@
 import { useContext } from "react"
 import { PresetContext } from "../../../context/PresetContext"
 
-import BotaoCopiar from "../../../shared/components/BotãoCopiar";
+import BotaoCopiar from "../../../shared/components/BotãoCopiar"
 
-import removerPreset from "../../../hooks/removerPreset";
+import removerPreset from "../../../hooks/removerPreset"
 
 const PresetSalvo = () => {
     const { preset, setPreset } = useContext(PresetContext)
@@ -35,7 +35,5 @@ const PresetSalvo = () => {
         </div>
    )
 } 
-
-
 
 export default PresetSalvo
