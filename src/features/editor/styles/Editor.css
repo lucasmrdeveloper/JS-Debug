@@ -1,3 +1,14 @@
+.editor {
+    background-color: #FFF;
+    padding: 20px;
+    border: 1px solid #e7e4e4;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
 /* ----- Inputs ----- */
 .personalizar-titulo{
     color: #000;

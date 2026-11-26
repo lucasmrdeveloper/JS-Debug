@@ -12,8 +12,8 @@ const Editor = () => {
     const { estado } = useContext(EstadoContext)
     
     return (
-        <div className="coluna-esquerda">
-            <h2 className="personalizar-titulo">Personalizar Estilo</h2>
+        <div className="editor">
+            <h2 className="editor__titulo">Personalizar Estilo</h2>
 
             <TextoInput
                 label="Mensagem"
