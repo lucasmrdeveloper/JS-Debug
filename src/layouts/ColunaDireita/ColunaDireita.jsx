@@ -6,7 +6,7 @@ import "./ColunaDireita.css"
 
 const ColunaDireita = () => {
     return (
-        <aside className="coluna-direita">
+        <aside className="coluna__direita">
             <Preview />
             <CodigoGerado />
             <Modal />
