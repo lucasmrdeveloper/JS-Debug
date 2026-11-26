@@ -24,7 +24,7 @@ const presets = [
 ]
 
 function Presets() {
-    return(
+    return (
         <div className="presets-box">
             <div className="presets-itens">
                 {presets.map(({ tipo, descricao, mensagem, cor }) =>

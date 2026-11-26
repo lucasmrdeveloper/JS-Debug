@@ -1,11 +1,8 @@
-// Hooks
 import { useRef, useState } from "react"
 
-// Lógica
 import modalController from "../../../hooks/modalController";
 import validarInputModal from "../../../hooks/validarInputModal";
 
-// CSS
 import "./styles/modal.css"
 
 function Modal() {
@@ -14,10 +11,9 @@ function Modal() {
     const { abrir, fechar, dialogRef } = modalController()
     const { hundleSalvar } = validarInputModal()
 
-
     const inputRef = useRef(null)
 
-    return(
+    return (
         <>
             <dialog className="preset-salvar" ref={dialogRef}>
                 <h2 className="preset-salvar-titulo">Salvar Preset</h2>
