@@ -1,9 +1,7 @@
 const BoxInputs = ({ children }) => {
     return (
-        <div className="personalizar-box">
-            <div className="personalizar-itens">
-                {children}
-            </div>
+        <div className="personalizar-itens">
+            {children}
         </div>
     )
 }
