@@ -8,18 +8,19 @@ import { PresetContext } from "../context/PresetContext"
 // Lógica
 import modalController from "./modalController";
 import notificacao from "./notificacao";
-import gerarCodigo from "../shared/hooks/useGerarCodigo";
+import { useGerarCodigo } from "../shared/hooks/useGerarCodigo";
+
 
 
 function salvarPreset() {
+    console.log("salvar preset")
     const { estado } = useContext(EstadoContext)
     const { setPreset } = useContext(PresetContext)
 
     const { fechar } = modalController()
     const { gerarNotificacao } = notificacao()
 
-    const codigoGerado = gerarCodigo(estado)
-    
+    const codigoGerado = useGerarCodigo()
 
     function salvar(nomePreset, fechar) {
         function criarPreset() {
