@@ -4,7 +4,7 @@ const TextoInput = ({ label, id, value }) => {
     const handleChange = useAtualizarEstado()
 
     return (
-        <div className="personalizar-item">
+        <div>
             <label htmlFor={id}>{label}</label>
             
             <input 
