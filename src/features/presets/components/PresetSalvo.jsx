@@ -5,7 +5,7 @@ import removerPreset from "../../../hooks/removerPreset";
 import copiarCodigo from "../../../shared/utils/copiarCodigo";
 
 
-function PresetSalvo() {
+const PresetSalvo = () => {
     const { preset, setPreset } = useContext(PresetContext)
     
     const { copiar } = copiarCodigo()

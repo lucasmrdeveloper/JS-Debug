@@ -23,7 +23,7 @@ const presets = [
     }
 ]
 
-function Presets() {
+const Presets = () => {
     return (
         <div className="presets-box">
             <div className="presets-itens">

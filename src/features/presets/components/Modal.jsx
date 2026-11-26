@@ -5,7 +5,7 @@ import validarInputModal from "../../../hooks/validarInputModal";
 
 import "./styles/modal.css"
 
-function Modal() {
+const Modal = () => {
     const [erro, setErro] = useState("")
 
     const { abrir, fechar, dialogRef } = modalController()
