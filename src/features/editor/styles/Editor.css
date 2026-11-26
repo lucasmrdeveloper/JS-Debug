@@ -8,12 +8,12 @@
     gap: 30px;
 }
 
-.personalizar-itens{
+.personalizar-itens {
     display: flex;
     gap: 20px;
 }
 
-.editor-cor__box{
+.editor-cor__box {
     display: flex;
     gap: 5px;
 }
@@ -33,6 +33,5 @@
 }
 
 .editor-cor__box input[type="color"]::-webkit-color-swatch {
-    border: 5px solid #e4e6ed;
     border-radius: 10px;
 }
