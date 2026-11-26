@@ -8,14 +8,6 @@
     gap: 30px;
 }
 
-
-/* ----- Inputs ----- */
-.personalizar-titulo{
-    color: #000;
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-
 .personalizar-itens{
     display: flex;
     gap: 20px;
