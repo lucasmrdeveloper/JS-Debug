@@ -1,0 +1,4 @@
+.editor__campos {
+    display: flex;
+    gap: 20px;
+}

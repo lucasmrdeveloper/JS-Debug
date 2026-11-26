@@ -8,11 +8,6 @@
     gap: 30px;
 }
 
-.editor__campos {
-    display: flex;
-    gap: 20px;
-}
-
 .editor-cor__box {
     display: flex;
     gap: 5px;
