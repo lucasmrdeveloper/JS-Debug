@@ -1,5 +1,7 @@
 import { useAtualizarEstado } from "../hooks/useAtualizarEstado"
 
+import "../styles/CorInput.css"
+
 const CorInput = ({ label, id, value }) => {
     const handleChange = useAtualizarEstado()
 

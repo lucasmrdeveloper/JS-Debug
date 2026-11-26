@@ -1,0 +1,22 @@
+.editor-cor__box {
+    display: flex;
+    gap: 5px;
+}
+
+.editor-cor__box input[type="color"] {
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 0;
+    width: 60px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.editor-cor__box input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.editor-cor__box input[type="color"]::-webkit-color-swatch {
+    border-radius: 10px;
+}
