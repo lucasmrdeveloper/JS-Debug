@@ -1,7 +1,7 @@
-const BotaoSalvar = ({ copiado }) => {
+const BotaoCopiar = ({ copiado }) => {
     return (
         <span>{copiado ? "Copiado!" : "Copiar"}</span>
     )
 }
 
-export default BotaoSalvar
+export default BotaoCopiar

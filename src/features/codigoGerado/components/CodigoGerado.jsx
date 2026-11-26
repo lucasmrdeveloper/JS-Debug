@@ -1,7 +1,7 @@
 import { useGerarCodigo } from "../../../shared/hooks/useGerarCodigo"
 import { useHandleCopiar } from "../../../shared/hooks/useHandleCopiar"
 
-import BotaoSalvar from "../../../shared/components/BotãoCopiar"
+import BotaoCopiar from "../../../shared/components/BotãoCopiar"
 
 import "../styles/CodigoGerado.css"
 
@@ -24,7 +24,7 @@ const CodigoGerado = () => {
                         alt="ícone de copiar código" 
                     />
 
-                    <BotaoSalvar copiado={copiado}/>
+                    <BotaoCopiar copiado={copiado}/>
                 </button>
 
                 <code className="codigo__gerado">
