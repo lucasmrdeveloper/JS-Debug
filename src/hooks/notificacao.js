@@ -1,7 +1,5 @@
-// Hook
 import { useContext } from "react"
 
-// Contexto
 import { NotificacaoContext } from "../context/NotificacaoContext"
 
 
