@@ -1,6 +1,6 @@
 import { useRef, useState } from "react"
 
-import modalController from "../../../hooks/modalController";
+import modalController from "../hook/modalController";
 import useHandleSalvar from "../hook/useHandleSalvar";
 
 import "../styles/modal.css"
