@@ -36,7 +36,7 @@ const Modal = () => {
                         onClick={fechar}>Cancelar</button>
 
                     <button className="preset-btn-salvar"
-                        onClick={() => handleSalvar(inputRef, setErro, fechar)}>Salvar Preset</button>
+                        onClick={() => handleSalvar(inputRef, setErro)}>Salvar Preset</button>
                 </div>
             </dialog>
 
