@@ -1,7 +1,7 @@
 import { useRef, useState } from "react"
 
 import modalController from "../../../hooks/modalController";
-import validarInputModal from "../hook/validarInputModal";
+import useHandleSalvar from "../hook/useHandleSalvar";
 
 import "../styles/modal.css"
 
@@ -9,7 +9,7 @@ const Modal = () => {
     const [erro, setErro] = useState("")
 
     const { abrir, fechar, dialogRef } = modalController()
-    const { hundleSalvar } = validarInputModal()
+    const handleSalvar = useHandleSalvar()
 
     const inputRef = useRef(null)
 
@@ -36,7 +36,7 @@ const Modal = () => {
                         onClick={fechar}>Cancelar</button>
 
                     <button className="preset-btn-salvar"
-                        onClick={() => hundleSalvar(inputRef, setErro, fechar)}>Salvar Preset</button>
+                        onClick={() => handleSalvar(inputRef, setErro, fechar)}>Salvar Preset</button>
                 </div>
             </dialog>
 

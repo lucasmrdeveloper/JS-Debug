@@ -1,6 +1,6 @@
 import salvarPreset from "../../../hooks/salvarPreset";
 
-function validarInputModal() {
+function useHandleSalvar() {
     const { salvar } = salvarPreset()
 
     function hundleSalvar(inputRef, setErro, fechar) {
@@ -15,4 +15,4 @@ function validarInputModal() {
     }
 }
 
-export default validarInputModal
+export default useHandleSalvar
