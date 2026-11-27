@@ -1,4 +1,4 @@
-import { useSalvarPreset } from "../../../hooks/useSalvarPreset"
+import { useSalvarPreset } from "./useSalvarPreset"
 
 const useHandleSalvar = () => {
     const salvarPreset = useSalvarPreset()
