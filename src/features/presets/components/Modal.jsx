@@ -1,6 +1,6 @@
 import { useRef, useState } from "react"
 
-import useModalToggle from "../hook/useModalToggle"
+import { useModalToggle } from "../hook/useModalToggle"
 import useHandleSalvar from "../hook/useHandleSalvar"
 
 import "../styles/modal.css"

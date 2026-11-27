@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 
-const useModalToggle = () => {
+export const useModalToggle = () => {
     const [modal, setModal] = useState(false)
     const dialogRef = useRef(null)
 
@@ -23,5 +23,3 @@ const useModalToggle = () => {
         dialogRef
     }
 }
-
-export default useModalToggle
