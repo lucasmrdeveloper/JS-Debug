@@ -2,8 +2,8 @@ import { useFormatarDadosPreview } from "../hooks/useFormatarDadosPreview"
 
 import "../styles/ConsolePreview.css"
 
-const ConsolePreview  = () => {
-    const preview = useFormatarDadosPreview()
+const ConsolePreview  = ({ item }) => {
+    const preview = useFormatarDadosPreview(item)
     
     return (
         <div className="preview__console" style={preview.styles.conteudo}>
