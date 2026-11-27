@@ -1,4 +1,4 @@
-import notificacao from "./notificacao";
+import notificacao from "../../../hooks/notificacao";
 
 function removerPreset() {
     const { gerarNotificacao } = notificacao()

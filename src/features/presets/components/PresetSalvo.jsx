@@ -4,7 +4,7 @@ import { PresetContext } from "../../../context/PresetContext"
 import ConsolePreview from "../../../shared/components/ConsolePreview"
 import BotaoCopiar from "../../../shared/components/BotãoCopiar"
 
-import removerPreset from "../../../hooks/removerPreset"
+import removerPreset from "../hook/removerPreset"
 
 const PresetSalvo = () => {
     const { preset, setPreset } = useContext(PresetContext)
