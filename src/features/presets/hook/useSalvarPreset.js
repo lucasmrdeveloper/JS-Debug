@@ -3,8 +3,8 @@ import { useContext } from "react";
 import { EstadoContext } from "../../../context/EstadoContext"
 import { PresetContext } from "../../../context/PresetContext"
 
-import modalController from "../../../hooks/modalController";
-import notificacao from "../../../hooks/notificacao";
+import modalController from "./modalController";
+import notificacao from "./notificacao";
 import { useGerarCodigo } from "../../../shared/hooks/useGerarCodigo";
 
 export const useSalvarPreset = () => {

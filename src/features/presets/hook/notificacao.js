@@ -1,6 +1,6 @@
 import { useContext } from "react"
 
-import { NotificacaoContext } from "../context/NotificacaoContext"
+import { NotificacaoContext } from "../../../context/NotificacaoContext"
 
 
 function notificacao() {
