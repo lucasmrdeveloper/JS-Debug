@@ -3,7 +3,7 @@ import { useRef, useState } from "react"
 import modalController from "../../../hooks/modalController";
 import validarInputModal from "../../../hooks/validarInputModal";
 
-import "./styles/modal.css"
+import "../styles/modal.css"
 
 const Modal = () => {
     const [erro, setErro] = useState("")

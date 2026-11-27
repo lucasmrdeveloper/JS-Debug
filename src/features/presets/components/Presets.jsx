@@ -2,7 +2,7 @@ import { presetsIniciais } from "../data/presetsIniciais"
 
 import ItemPreset from "./ItemPreset"
 
-import "./styles/Presets.css"
+import "../styles/Presets.css"
 
 const Presets = () => {
     return (
