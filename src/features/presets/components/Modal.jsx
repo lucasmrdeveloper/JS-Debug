@@ -40,7 +40,7 @@ const Modal = () => {
 
                     <button 
                         className="preset-btn-salvar"
-                        onClick={() => handleSalvar(inputRef, setErro)}
+                        onClick={() => handleSalvar(inputRef, setErro, fechar)}
                     >
                         Salvar Preset
                     </button>

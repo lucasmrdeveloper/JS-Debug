@@ -3,7 +3,7 @@ import { useSalvarPreset } from "./useSalvarPreset"
 const useHandleSalvar = () => {
     const salvarPreset = useSalvarPreset()
 
-    return (inputRef, setErro) => {
+    return (inputRef, setErro, fechar) => {
         const nomePreset = inputRef.current.value.trim()
 
         if (!nomePreset) {
@@ -12,6 +12,7 @@ const useHandleSalvar = () => {
         }
     
         salvarPreset(nomePreset)
+        fechar()
     }
 }
 
