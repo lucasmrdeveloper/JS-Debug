@@ -1,4 +1,4 @@
-import salvarPreset from "./salvarPreset";
+import salvarPreset from "../../../hooks/salvarPreset";
 
 function validarInputModal() {
     const { salvar } = salvarPreset()

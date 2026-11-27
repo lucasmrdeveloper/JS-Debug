@@ -1,7 +1,7 @@
 import { useRef, useState } from "react"
 
 import modalController from "../../../hooks/modalController";
-import validarInputModal from "../../../hooks/validarInputModal";
+import validarInputModal from "../hook/validarInputModal";
 
 import "../styles/modal.css"
 
