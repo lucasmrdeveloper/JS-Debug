@@ -1,17 +1,16 @@
 import salvarPreset from "../../../hooks/salvarPreset";
 
-function useHandleSalvar() {
+const useHandleSalvar = () => {
     const { salvar } = salvarPreset()
 
-    function hundleSalvar(inputRef, setErro, fechar) {
+    return (inputRef, setErro, fechar) => {
         const nomePreset = inputRef.current.value.trim()
-        const msgErro = "O campo está vazio, digite um nome para o preset."
-    
-        !nomePreset ? setErro(msgErro) : salvar(nomePreset, fechar)
-    }
 
-    return{
-        hundleSalvar
+        if (!nomePreset) {
+            setErro("O campo está vazio, digite um nome para o preset.")
+        }
+    
+        salvar(nomePreset, fechar)
     }
 }
 
