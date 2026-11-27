@@ -7,9 +7,7 @@ import modalController from "./modalController";
 import notificacao from "./notificacao";
 import { useGerarCodigo } from "../shared/hooks/useGerarCodigo";
 
-
-
-export const useSalvarPreset = (nomePreset) => {
+export const useSalvarPreset = () => {
     const { estado } = useContext(EstadoContext)
     const { setPreset } = useContext(PresetContext)
     const { gerarNotificacao } = notificacao()
@@ -23,11 +21,7 @@ export const useSalvarPreset = (nomePreset) => {
             codigoGerado: codigoGerado
         }
 
-        setPreset(preset => [
-            ...preset, 
-            novoPreset
-        ])
-
+        setPreset(preset => [...preset, novoPreset])
         gerarNotificacao("Preset salvo com sucesso!")
     }
 }
