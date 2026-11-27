@@ -1,17 +1,17 @@
 import { useContext } from "react"
+import { useGerarCodigo } from "../../../shared/hooks/useGerarCodigo"
+import useModalToggle from "./useModalToggle"
+import notificacao from "./notificacao"
 
 import { EstadoContext } from "../../../context/EstadoContext"
 import { PresetContext } from "../../../context/PresetContext"
 
-import useModalToggle from "./useModalToggle"
-import notificacao from "./notificacao"
-import { useGerarCodigo } from "../../../shared/hooks/useGerarCodigo"
-
 export const useSalvarPreset = () => {
     const { estado } = useContext(EstadoContext)
     const { setPreset } = useContext(PresetContext)
-    const { gerarNotificacao } = notificacao()
+
     const codigoGerado = useGerarCodigo()
+    const { gerarNotificacao } = notificacao()
 
     return (nomePreset) => {
         const novoPreset = {
