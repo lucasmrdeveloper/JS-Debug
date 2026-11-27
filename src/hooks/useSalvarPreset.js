@@ -16,21 +16,21 @@ export const useSalvarPreset = (nomePreset) => {
     const { estado } = useContext(EstadoContext)
     const { setPreset } = useContext(PresetContext)
     const { gerarNotificacao } = notificacao()
-
     const codigoGerado = useGerarCodigo()
 
-    const novoPreset = {
-        nomePreset,
-        ...estado,
-        id: crypto.randomUUID(),
-        codigoGerado: codigoGerado
+    return (nomePreset) => {
+        const novoPreset = {
+            nomePreset,
+            ...estado,
+            id: crypto.randomUUID(),
+            codigoGerado: codigoGerado
+        }
+
+        setPreset(preset => [
+            ...preset, 
+            novoPreset
+        ])
+
+        gerarNotificacao("Preset salvo com sucesso!")
     }
-
-    setPreset(preset => [
-        ...preset, 
-        novoPreset
-    ])
-
-   
-    gerarNotificacao("Preset salvo com sucesso!")
 }
