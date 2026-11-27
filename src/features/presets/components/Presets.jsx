@@ -8,7 +8,7 @@ const Presets = () => {
     return (
         <div className="presets-box">
             <div className="presets-itens">
-                {presetsIniciais.map(({ tipo, descricao, mensagem, cor }) =>
+                {presetsIniciais.map(({ id, tipo, descricao, mensagem, cor }) =>
                     <ItemPreset
                         key={id}
                         tipo={tipo}
