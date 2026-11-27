@@ -1,6 +1,6 @@
 import { useRef, useState } from "react"
 
-import modalController from "../hook/modalController"
+import useModalToggle from "../hook/useModalToggle"
 import useHandleSalvar from "../hook/useHandleSalvar"
 
 import "../styles/modal.css"
@@ -9,7 +9,7 @@ const Modal = () => {
     const [erro, setErro] = useState("")
     const inputRef = useRef(null)
 
-    const { abrir, fechar, dialogRef } = modalController()
+    const { abrir, fechar, dialogRef } = useModalToggle()
     const handleSalvar = useHandleSalvar()
 
     return (

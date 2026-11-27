@@ -3,7 +3,7 @@ import { useContext } from "react"
 import { EstadoContext } from "../../../context/EstadoContext"
 import { PresetContext } from "../../../context/PresetContext"
 
-import modalController from "./modalController"
+import useModalToggle from "./useModalToggle"
 import notificacao from "./notificacao"
 import { useGerarCodigo } from "../../../shared/hooks/useGerarCodigo"
 
