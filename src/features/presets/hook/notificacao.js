@@ -2,7 +2,6 @@ import { useContext } from "react"
 
 import { NotificacaoContext } from "../../../context/NotificacaoContext"
 
-
 const notificacao = () => {
     const { setNotificacao } = useContext(NotificacaoContext)
 
@@ -14,9 +13,7 @@ const notificacao = () => {
         }, 3000)
     }
 
-    return{
-        gerarNotificacao
-    }
+    return gerarNotificacao
 }
 
 export default notificacao
