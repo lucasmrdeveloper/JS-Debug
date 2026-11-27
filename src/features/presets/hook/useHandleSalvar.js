@@ -8,6 +8,7 @@ const useHandleSalvar = () => {
 
         if (!nomePreset) {
             setErro("O campo está vazio, digite um nome para o preset.")
+            return
         }
     
         salvarPreset(nomePreset)
