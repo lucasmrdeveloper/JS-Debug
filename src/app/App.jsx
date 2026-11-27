@@ -14,7 +14,7 @@ import "./styles/App.css"
 import { NotificacaoContext } from '../context/NotificacaoContext'
 
 
-function App() {
+const App = () => {
   const { notificacao } = useContext(NotificacaoContext)
 
   return (

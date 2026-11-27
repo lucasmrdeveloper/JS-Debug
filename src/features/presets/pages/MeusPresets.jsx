@@ -3,7 +3,7 @@ import PresetSalvo from "../components/PresetSalvo"
 
 import "./MeusPresets.css"
 
-function MeusPresets() {
+const MeusPresets = () => {
     return (
         <>
             <Header></Header>

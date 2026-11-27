@@ -20,7 +20,7 @@ const router = createBrowserRouter([
   { path: "meus-presets", element: <MeusPresets/> }
 ])
 
-function Root() {
+const Root = () => {
     const [preset, setPreset] = useState(() => {
       const data = localStorage.getItem("presets")
 

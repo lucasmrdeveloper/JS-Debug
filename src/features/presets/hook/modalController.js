@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 
-function modalController() {
+const modalController = () => {
     const [modal, setModal] = useState(false)
     const dialogRef = useRef(null)
 

@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import { EstadoContext } from "../../context/EstadoContext"
 
-export function useGerarCodigo() {
+export const useGerarCodigo = () => {
     const { estado } = useContext(EstadoContext)
 
     const { 

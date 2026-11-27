@@ -3,10 +3,10 @@ import { useContext } from "react"
 import { NotificacaoContext } from "../../../context/NotificacaoContext"
 
 
-function notificacao() {
+const notificacao = () => {
     const { setNotificacao } = useContext(NotificacaoContext)
 
-    function gerarNotificacao(mensagem) {
+    const gerarNotificacao = (mensagem) => {
         setNotificacao(mensagem)
         
         setTimeout(() => {

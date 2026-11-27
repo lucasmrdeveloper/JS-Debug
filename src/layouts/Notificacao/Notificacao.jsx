@@ -1,7 +1,7 @@
 import "./Notificacao.css"
 
-function Notificacao( {texto} ) {
-    return(
+const Notificacao = ({ texto }) => {
+    return (
         <div className="notificacao-box">
             <p>{texto}</p>
         </div>
