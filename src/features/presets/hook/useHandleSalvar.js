@@ -1,6 +1,6 @@
 import { useSalvarPreset } from "./useSalvarPreset"
 
-const useHandleSalvar = () => {
+export const useHandleSalvar = () => {
     const salvarPreset = useSalvarPreset()
 
     return (inputRef, setErro, fechar) => {
@@ -15,5 +15,3 @@ const useHandleSalvar = () => {
         fechar()
     }
 }
-
-export default useHandleSalvar

@@ -12,5 +12,3 @@ export const useHandlePreset = () => {
         }))
     }
 }
-
-export default useHandlePreset

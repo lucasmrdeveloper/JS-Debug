@@ -1,10 +1,11 @@
 import { useContext } from "react"
+import { useHandleRemoverPreset } from "../hook/useHandleRemoverPreset"
+
 import { PresetContext } from "../../../context/PresetContext"
 
 import ConsolePreview from "../../../shared/components/ConsolePreview"
 import BotaoCopiar from "../../../shared/components/BotãoCopiar"
 
-import useHandleRemoverPreset from "../hook/useHandleRemoverPreset"
 
 const PresetSalvo = () => {
     const { preset, setPreset } = useContext(PresetContext)

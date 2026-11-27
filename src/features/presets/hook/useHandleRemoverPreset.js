@@ -1,6 +1,6 @@
 import notificacao from "../hook/notificacao"
 
-const useHandleRemoverPreset = () => {
+export const useHandleRemoverPreset = () => {
     const { gerarNotificacao } = notificacao()
     
     return (id, setPreset) => {
@@ -11,5 +11,3 @@ const useHandleRemoverPreset = () => {
         gerarNotificacao("Preset removido!")
     }
 }
-
-export default useHandleRemoverPreset

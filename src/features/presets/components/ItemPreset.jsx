@@ -1,4 +1,4 @@
-import useHandlePreset from "../hook/useHandlePreset"
+import { useHandlePreset } from "../hook/useHandlePreset"
 
 const ItemPreset = ({ tipo, descricao, mensagem, cor }) => {
     const handlePreset = useHandlePreset()
