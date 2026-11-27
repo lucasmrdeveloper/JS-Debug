@@ -1,4 +1,4 @@
-import notificacao from "../../../hooks/notificacao"
+import notificacao from "../hook/notificacao"
 
 const useHandleRemoverPreset = () => {
     const { gerarNotificacao } = notificacao()
