@@ -1,6 +1,6 @@
 import notificacao from "../../../hooks/notificacao";
 
-function removerPreset() {
+const useHandleRemoverPreset = () => {
     const { gerarNotificacao } = notificacao()
     
     function remover(item, setPreset){
@@ -22,4 +22,4 @@ function removerPreset() {
     }
 }
 
-export default removerPreset
+export default useHandleRemoverPreset
