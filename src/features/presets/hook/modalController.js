@@ -8,14 +8,14 @@ const modalController = () => {
     const fechar = () => setModal(false)
 
     useEffect(() => {
-        if (!dialogRef.current) return;
+        if (!dialogRef.current) return
         
         if (modal) {
-            dialogRef.current.showModal();
+            dialogRef.current.showModal()
         } else {
-            dialogRef.current.close();
+            dialogRef.current.close()
         }
-    }, [modal]);
+    }, [modal])
 
     return{
         abrir,
