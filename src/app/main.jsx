@@ -6,7 +6,7 @@ import { createBrowserRouter } from 'react-router'
 import { RouterProvider } from 'react-router'
 
 // Hook
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 // Componetes
 import App from './App.jsx'
@@ -44,6 +44,10 @@ function Root() {
       borda: "none",
       codigoGerado: ``
     })
+
+    useEffect(() => {
+      localStorage.setItem("presets", JSON.stringify(preset))
+    }, [preset])
 
     return (
       <>
