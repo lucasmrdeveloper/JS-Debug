@@ -1,6 +1,5 @@
 import { useContext } from "react"
 import { useGerarCodigo } from "../../../shared/hooks/useGerarCodigo"
-import { useModalToggle } from "./useModalToggle"
 import notificacao from "./notificacao"
 
 import { EstadoContext } from "../../../context/EstadoContext"
