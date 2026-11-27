@@ -7,11 +7,10 @@ import "../styles/modal.css"
 
 const Modal = () => {
     const [erro, setErro] = useState("")
+    const inputRef = useRef(null)
 
     const { abrir, fechar, dialogRef } = modalController()
     const handleSalvar = useHandleSalvar()
-
-    const inputRef = useRef(null)
 
     return (
         <>
@@ -32,16 +31,28 @@ const Modal = () => {
                 {erro && <p className="preset-input-vazio">{erro}</p>}
 
                 <div className="preset-salvar-btns">
-                    <button className="preset-btn-cancelar" 
-                        onClick={fechar}>Cancelar</button>
+                    <button 
+                        className="preset-btn-cancelar" 
+                        onClick={fechar}
+                    >
+                        Cancelar
+                    </button>
 
-                    <button className="preset-btn-salvar"
-                        onClick={() => handleSalvar(inputRef, setErro)}>Salvar Preset</button>
+                    <button 
+                        className="preset-btn-salvar"
+                        onClick={() => handleSalvar(inputRef, setErro)}
+                    >
+                        Salvar Preset
+                    </button>
                 </div>
             </dialog>
 
-
-            <button className="preset-btn-modal" onClick={abrir}>Salvar Preset</button>
+            <button 
+                className="preset-btn-modal" 
+                onClick={abrir}
+            >
+                Salvar Preset
+            </button>
         </>
     )
 }
