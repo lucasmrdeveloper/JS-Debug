@@ -11,7 +11,7 @@ export const useSalvarPreset = () => {
     const { setPreset } = useContext(PresetContext)
 
     const codigoGerado = useGerarCodigo()
-    const { gerarNotificacao } = notificacao()
+    const notificar = notificacao()
 
     return (nomePreset) => {
         const novoPreset = {
@@ -22,6 +22,6 @@ export const useSalvarPreset = () => {
         }
 
         setPreset(preset => [...preset, novoPreset])
-        gerarNotificacao("Preset salvo com sucesso!")
+        notificar("Preset salvo com sucesso!")
     }
 }
